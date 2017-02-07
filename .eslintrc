@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "plugins": [
+    "class-property",
+    "react",
+  ],
+  "rules": {
+    "comma-dangle": [ "error", "always-multiline" ],
+    "curly": [ "error", "multi-line" ],
+    "dot-notation": [ "error", { "allowKeywords": true } ],
+    "eqeqeq": [ "error", "smart" ],
+    "no-alert": "error",
+    "no-cond-assign": [ "error", "always" ],
+    "no-constant-condition": "error",
+    "no-debugger": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-extend-native": "error",
+    "no-extra-bind": "error",
+    "no-floating-decimal": "error",
+    "no-lonely-if": "error",
+    "no-magic-numbers": [ "error", { "ignoreArrayIndexes": true } ],
+    "no-path-concat": "error",
+    "no-spaced-func": "error",
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1, "maxBOF": 1 }],
+    "no-trailing-spaces": "error",
+    "no-unexpected-multiline": "error",
+    "no-unneeded-ternary": "error",
+    "no-whitespace-before-property": "error",
+    "semi": [ "error", "always", { "omitLastInOneLineBlock": true } ],
+    "valid-typeof": "error",
+    "vars-on-top": "error",
+    "quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }]
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  }
+}

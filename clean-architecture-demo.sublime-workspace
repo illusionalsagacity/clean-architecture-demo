@@ -1,0 +1,3009 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getoto",
+				"getTodoByIDSelector〔function〕"
+			],
+			[
+				"getTodo",
+				"getTodosStateSelector〔function〕"
+			],
+			[
+				"getTodos",
+				"getTodoByIDSelector"
+			],
+			[
+				"getTo",
+				"getTodosStateSelector〔function〕"
+			],
+			[
+				"getTO",
+				"getTodoByIDSelector"
+			],
+			[
+				"revers",
+				"reverseLookupTable"
+			],
+			[
+				"create",
+				"creationDate"
+			],
+			[
+				"getGrid",
+				"getGridstackWidgetPosition"
+			],
+			[
+				"retr",
+				"retrieveReportProperties"
+			],
+			[
+				"initii",
+				"initialRender〔function〕"
+			],
+			[
+				"valida",
+				"validateArray"
+			],
+			[
+				"validate",
+				"validateHexCode〔function〕"
+			],
+			[
+				"observable",
+				"observableArray"
+			],
+			[
+				"default",
+				"defaultColors〔variable〕"
+			],
+			[
+				"defau",
+				"defaultColors"
+			],
+			[
+				"Char",
+				"ChartColorListViewModel〔variable〕"
+			],
+			[
+				"onMouse",
+				"onMouseLeave"
+			],
+			[
+				"get",
+				"getOptionLabel〔variable〕"
+			],
+			[
+				"highligh",
+				"highlightedOption〔variable〕"
+			],
+			[
+				"initial",
+				"initialDropdownOpen"
+			],
+			[
+				"getOption",
+				"getOptionLabelKey〔variable〕"
+			],
+			[
+				"PickList",
+				"PickList-optionListItem--isHighlighted"
+			],
+			[
+				"getOptionLable",
+				"getOptionLabelKey〔variable〕"
+			],
+			[
+				"high",
+				"highlightedOption"
+			],
+			[
+				"Pro",
+				"PropTypes"
+			],
+			[
+				"prop",
+				"propTypes"
+			],
+			[
+				"Field",
+				"FieldGroup--select"
+			],
+			[
+				"FieldGrou",
+				"FieldGroup--input"
+			],
+			[
+				"web",
+				"webpackConfig〔variable〕"
+			],
+			[
+				"aggre",
+				"aggregationColumnDefinitions"
+			],
+			[
+				"$dropdown",
+				"$dropdownMenu〔variable〕"
+			],
+			[
+				"$dropD",
+				"$dropdownMenu〔variable〕"
+			],
+			[
+				"$drop",
+				"$dropdownToggle〔variable〕"
+			],
+			[
+				"textIn",
+				"textInputAttr"
+			],
+			[
+				"consooe",
+				"console.log"
+			],
+			[
+				"observabl",
+				"observableArray"
+			],
+			[
+				"viewm",
+				"_viewModel〔variable〕"
+			],
+			[
+				"initi",
+				"initializeSalesforce"
+			],
+			[
+				"data-t",
+				"data-toggle"
+			],
+			[
+				"onS",
+				"onSearchComplete"
+			],
+			[
+				"results",
+				"resultsViewModel〔variable〕"
+			],
+			[
+				"natural",
+				"naturalHeight"
+			],
+			[
+				"ancesr",
+				"ancestorClientID"
+			],
+			[
+				"flattenColum",
+				"flattenColumnDefinitionFilters"
+			],
+			[
+				"groupedHead",
+				"groupedHeaderColumnDefinitions"
+			],
+			[
+				"ances",
+				"ancestorClientID"
+			],
+			[
+				"posi",
+				"positionTether"
+			],
+			[
+				"getPre",
+				"getPredefinedTabClientID"
+			],
+			[
+				"initialTab",
+				"initialTabIsValid"
+			],
+			[
+				"expression",
+				"expressionBuilder"
+			],
+			[
+				"data-",
+				"data-placeholder"
+			],
+			[
+				"tab",
+				"tabSettingsDialog__alert-info-content"
+			],
+			[
+				"content",
+				"contenteditable-oneliner"
+			],
+			[
+				"contented",
+				"contenteditable-plain"
+			],
+			[
+				"filter",
+				"filteredHtml"
+			],
+			[
+				"selec",
+				"selectionRange"
+			],
+			[
+				"moveLeft",
+				"_moveLeft〔function〕"
+			],
+			[
+				"move",
+				"moveLeftTabIntoView〔function〕"
+			],
+			[
+				"col",
+				"columnResizeTooltip"
+			],
+			[
+				"column",
+				"columnResizeTooltip"
+			],
+			[
+				"defaultLef",
+				"defaultLeftPosition"
+			],
+			[
+				"presen",
+				"presentations"
+			],
+			[
+				"findActi",
+				"findActiveTabIndex"
+			],
+			[
+				"stric",
+				"strictEqual"
+			],
+			[
+				"expe",
+				"expected〔variable〕"
+			],
+			[
+				"getTab",
+				"getTabWidths"
+			],
+			[
+				"st",
+				"strictEqual"
+			],
+			[
+				"preven",
+				"preventDefault"
+			],
+			[
+				"defaul",
+				"defaultLeftOffset〔variable〕"
+			],
+			[
+				"amoun",
+				"amountOfTabVisible〔variable〕"
+			],
+			[
+				"total",
+				"totalListWidth"
+			],
+			[
+				"fi",
+				"firstVisibleTabIndex"
+			],
+			[
+				"item",
+				"itemWidths"
+			],
+			[
+				"calculate",
+				"calculateFirstVisibleTabIndex"
+			],
+			[
+				"vis",
+				"visibleWidth"
+			],
+			[
+				"calu",
+				"calculateLastVisibleTabIndex"
+			],
+			[
+				"wid",
+				"widthLeft"
+			],
+			[
+				"sc",
+				"scrollBarWidths"
+			],
+			[
+				"initiz",
+				"initialized"
+			],
+			[
+				"cal",
+				"calculateHiddenWidth"
+			],
+			[
+				"enable",
+				"enableMetricStatusColor"
+			],
+			[
+				"tran",
+				"translateZ()"
+			],
+			[
+				"refre",
+				"refreshWidget"
+			],
+			[
+				"slideNu",
+				"slideNumberAlignment"
+			],
+			[
+				"redic",
+				"redirectToMultiFactorAuthentication"
+			],
+			[
+				"available",
+				"availableSlideNumberAlignments"
+			],
+			[
+				"slideNum",
+				"slideNumbersEnabled"
+			],
+			[
+				"redi",
+				"redirectToAccountLocked"
+			],
+			[
+				"accoun",
+				"accountLocked-header"
+			],
+			[
+				"marign-",
+				"margin-top"
+			],
+			[
+				"data",
+				"dataSetValue"
+			],
+			[
+				"target",
+				"targetAttachment"
+			],
+			[
+				"has",
+				"hasEditableLayout"
+			],
+			[
+				"colo",
+				"chartColorList"
+			],
+			[
+				"colro",
+				"colorpicker"
+			],
+			[
+				"widget",
+				"widgetClassName〔variable〕"
+			],
+			[
+				"timechar",
+				"timeframeChartUtils"
+			],
+			[
+				"repas",
+				"reparseColumnDefinitions"
+			],
+			[
+				"groupCOl",
+				"groupColumnOptions"
+			],
+			[
+				"generate",
+				"generateGroupingLabel"
+			],
+			[
+				"displayName",
+				"displayNameEventHandler〔function〕"
+			],
+			[
+				"groupCol",
+				"groupColumnOptions"
+			],
+			[
+				"groupBy",
+				"groupByOptions"
+			],
+			[
+				"old",
+				"old_parent_id"
+			],
+			[
+				"subrow",
+				"subRows"
+			],
+			[
+				"parese",
+				"parseTableRow"
+			],
+			[
+				"virtual",
+				"virtualTemplates"
+			],
+			[
+				"mark",
+				"marker_config〔variable〕"
+			],
+			[
+				"update",
+				"updateTodayMarkerPosition"
+			],
+			[
+				"editable",
+				"editTableDefinition"
+			],
+			[
+				"arche",
+				"archetypesConfiguration"
+			],
+			[
+				"richt",
+				"richTextEditor.js"
+			],
+			[
+				"custom",
+				"customAttributePickList"
+			],
+			[
+				"configure",
+				"configureTimeframe.html"
+			],
+			[
+				"Inte",
+				"IntegerProperty"
+			],
+			[
+				"correct",
+				"correct_guesses"
+			],
+			[
+				"urlsafe",
+				"urlsafe_game_key"
+			],
+			[
+				"ur",
+				"urlsafe_game_key"
+			],
+			[
+				"attempt",
+				"attempts_remaining"
+			],
+			[
+				"app",
+				"appViewModel"
+			],
+			[
+				"init",
+				"initialized"
+			],
+			[
+				"depen",
+				"dependencyName"
+			],
+			[
+				"htmlB",
+				"htmlWebpackPlugin"
+			],
+			[
+				"dh",
+				"dhtmlxgantt"
+			],
+			[
+				"async",
+				"asyncSetHtmlContent"
+			],
+			[
+				"sideb",
+				"sidebarVisible"
+			],
+			[
+				"hand",
+				"handsontable-bootstrap"
+			],
+			[
+				"html",
+				"html_loader〔variable〕"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "webpack.config.babel.js",
+			"settings":
+			{
+				"buffer_size": 1445,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/index.js",
+			"settings":
+			{
+				"buffer_size": 152,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/models/index.js",
+			"settings":
+			{
+				"buffer_size": 56,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/models/Todo/index.js",
+			"settings":
+			{
+				"buffer_size": 71,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/entities/TodoEntity.test.js",
+			"settings":
+			{
+				"buffer_size": 235,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 9 files for \"console\"\n\n/Users/Meyer/Source/clean-architecture-demo/wallaby.js:\n   29      testFramework: \"ava\",\n   30  \n   31:     reportConsoleErrorAsError: true,\n   32  \n   33      env: {\n\n/Users/Meyer/Source/clean-architecture-demo/dist/main.bundle.js:\n  354          return args[argIndex++];\n  355        });\n  356:       if (typeof console !== 'undefined') {\n  357:         console.error(message);\n  358        }\n  359        try {\n  ...\n  632    return ('WebkitAppearance' in document.documentElement.style) ||\n  633      // is firebug? http://stackoverflow.com/a/398120/376773\n  634:     (window.console && (console.firebug || (console.exception && console.table))) ||\n  635      // is firefox >= v31?\n  636:     // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages\n  637      (navigator.userAgent.toLowerCase().match(/firefox\\/(\\d+)/) && parseInt(RegExp.$1, 10) >= 31);\n  638  }\n  ...\n  689  \n  690  /**\n  691:  * Invokes `console.log()` when available.\n  692:  * No-op when `console.log` is not a \"function\".\n  693   *\n  694   * @api public\n  ...\n  697  function log() {\n  698    // this hackery is required for IE8/9, where\n  699:   // the `console.log` function doesn't have 'apply'\n  700:   return 'object' === typeof console\n  701:     && console.log\n  702:     && Function.prototype.apply.call(console.log, console, arguments);\n  703  }\n  704  \n  ...\n 1685        }\n 1686        markerName = 'React update: ' + namedComponent.getName();\n 1687:       console.time(markerName);\n 1688      }\n 1689  \n ....\n 1691  \n 1692      if (markerName) {\n 1693:       console.timeEnd(markerName);\n 1694      }\n 1695  \n ....\n 9156      } else {\n 9157        if (process.env.NODE_ENV !== 'production') {\n 9158:         console.error('Attempted to listen to events during the capture phase on a ' + 'browser that does not support the capture phase. Your application ' + 'will not receive some events.');\n 9159        }\n 9160        return {\n ....\n 10242  \n 10243  var ReactFeatureFlags = {\n 10244:   // When true, call console.time() before and .timeEnd() after each top-level\n 10245    // render (both initial renders and updates). Useful when looking at prod-mode\n 10246    // timeline profiles in Chrome, for example.\n .....\n 10558      var type = wrappedElement.type;\n 10559      markerName = 'React mount: ' + (typeof type === 'string' ? type : type.displayName || type.name);\n 10560:     console.time(markerName);\n 10561    }\n 10562  \n .....\n 10565  \n 10566    if (markerName) {\n 10567:     console.timeEnd(markerName);\n 10568    }\n 10569  \n .....\n 12825  function log(level, msg) {\n 12826  \tif(logLevel === \"info\" && level === \"info\")\n 12827: \t\treturn console.log(msg);\n 12828  \tif([\"info\", \"warning\"].indexOf(logLevel) >= 0 && level === \"warning\")\n 12829: \t\treturn console.warn(msg);\n 12830  \tif([\"info\", \"warning\", \"error\"].indexOf(logLevel) >= 0 && level === \"error\")\n 12831: \t\treturn console.error(msg);\n 12832  }\n 12833  \n .....\n 12883  \t\tsendMsg(\"Warnings\", strippedWarnings);\n 12884  \t\tfor(var i = 0; i < strippedWarnings.length; i++)\n 12885: \t\t\tconsole.warn(strippedWarnings[i]);\n 12886  \t\tif(initial) return initial = false;\n 12887  \t\treloadApp();\n .....\n 12894  \t\tsendMsg(\"Errors\", strippedErrors);\n 12895  \t\tfor(var i = 0; i < strippedErrors.length; i++)\n 12896: \t\t\tconsole.error(strippedErrors[i]);\n 12897  \t\tif(useOverlay) overlay.showErrors(errors);\n 12898  \t},\n .....\n 12969  \t\tmodule.hot.check(true).then(function(updatedModules) {\n 12970  \t\t\tif(!updatedModules) {\n 12971: \t\t\t\tconsole.warn(\"[HMR] Cannot find update. Need to do a full reload!\");\n 12972: \t\t\t\tconsole.warn(\"[HMR] (Probably because of restarting the webpack-dev-server)\");\n 12973  \t\t\t\twindow.location.reload();\n 12974  \t\t\t\treturn;\n .....\n 12982  \n 12983  \t\t\tif(upToDate()) {\n 12984: \t\t\t\tconsole.log(\"[HMR] App is up to date.\");\n 12985  \t\t\t}\n 12986  \n .....\n 12988  \t\t\tvar status = module.hot.status();\n 12989  \t\t\tif([\"abort\", \"fail\"].indexOf(status) >= 0) {\n 12990: \t\t\t\tconsole.warn(\"[HMR] Cannot apply update. Need to do a full reload!\");\n 12991: \t\t\t\tconsole.warn(\"[HMR] \" + err.stack || err.message);\n 12992  \t\t\t\twindow.location.reload();\n 12993  \t\t\t} else {\n 12994: \t\t\t\tconsole.warn(\"[HMR] Update failed: \" + err.stack || err.message);\n 12995  \t\t\t}\n 12996  \t\t});\n .....\n 13000  \t\tlastHash = currentHash;\n 13001  \t\tif(!upToDate() && module.hot.status() === \"idle\") {\n 13002: \t\t\tconsole.log(\"[HMR] Checking for updates on the server...\");\n 13003  \t\t\tcheck();\n 13004  \t\t}\n 13005  \t});\n 13006: \tconsole.log(\"[HMR] Waiting for update signal from WDS...\");\n 13007  } else {\n 13008  \tthrow new Error(\"[HMR] Hot Module Replacement is disabled.\");\n .....\n 13323        args = exports.formatArgs.apply(self, args);\n 13324      }\n 13325:     var logFn = enabled.log || exports.log || console.log.bind(console);\n 13326      logFn.apply(self, args);\n 13327    }\n .....\n 13679      if (m && m > 0 && this._events[type].length > m) {\n 13680        this._events[type].warned = true;\n 13681:       console.error('(node) warning: possible EventEmitter memory ' +\n 13682                      'leak detected. %d listeners added. ' +\n 13683                      'Use emitter.setMaxListeners() to increase limit.',\n 13684                      this._events[type].length);\n 13685:       if (typeof console.trace === 'function') {\n 13686          // not supported in IE 10\n 13687:         console.trace();\n 13688        }\n 13689      }\n .....\n 18446          // Firefox does not have the issue with devtools loaded over file://\n 18447          var showFileUrlMessage = window.location.protocol.indexOf('http') === -1 && navigator.userAgent.indexOf('Firefox') === -1;\n 18448:         console.debug('Download the React DevTools ' + (showFileUrlMessage ? 'and use an HTTP server (instead of a file: URL) ' : '') + 'for a better development experience: ' + 'https://fb.me/react-devtools');\n 18449        }\n 18450      }\n .....\n 26522      propFullName = propFullName || propName;\n 26523      if (process.env.NODE_ENV !== 'production') {\n 26524:       if (secret !== ReactPropTypesSecret && typeof console !== 'undefined') {\n 26525          var cacheKey = componentName + ':' + propName;\n 26526          if (!manualPropTypeCallCache[cacheKey]) {\n .....\n 29535  \n 29536    try {\n 29537:     levelExists = global.console && global.console[level] && global.console[level].apply;\n 29538    } catch(e) {\n 29539      // do nothing\n .....\n 29541  \n 29542    logObject[level] = levelExists ? function () {\n 29543:     return global.console[level].apply(global.console, arguments);\n 29544    } : (level === 'log' ? function () {} : logObject.log);\n 29545  });\n\n/Users/Meyer/Source/clean-architecture-demo/test/entities/TodoEntity.test.js:\n    2  import models from \"models\";\n    3  \n    4: console.log(models);\n    5  \n    6  // const { Todo } = models.Todo;\n    7  \n    8: // console.log(Todo);\n    9  \n   10  \n\n48 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 6922,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "wallaby.js",
+			"settings":
+			{
+				"buffer_size": 682,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/models/Todo/TodoModel.js",
+			"settings":
+			{
+				"buffer_size": 105,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "wall",
+		"selected_items":
+		[
+			[
+				"wall",
+				"Wallaby.js: Start"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"wal",
+				"Wallaby.js: Start"
+			],
+			[
+				"toggle",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"tog",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"sublime linter debu",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"toggl",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"togglel",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"flow",
+				"Flow"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"wa",
+				"Wallaby.js: Start"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"star",
+				"Wallaby.js: Start"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"syntax js",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"check",
+				"git: checkout current file"
+			],
+			[
+				"checkout",
+				"git: checkout"
+			],
+			[
+				"diff inlin",
+				"git: diff current file inline"
+			],
+			[
+				"dif",
+				"git: diff"
+			],
+			[
+				"diff",
+				"git: diff"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"d",
+				"File: Delete"
+			],
+			[
+				"fet",
+				"git: fetch"
+			],
+			[
+				"status",
+				"git: status"
+			],
+			[
+				"blame",
+				"git: blame current file"
+			],
+			[
+				"chec",
+				"git: checkout"
+			],
+			[
+				"stop",
+				"Wallaby.js: Stop"
+			],
+			[
+				"sta",
+				"Wallaby.js: Start"
+			],
+			[
+				"run file",
+				"Wallaby.js: Run file tests"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"inline",
+				"git: diff current file inline"
+			],
+			[
+				"git status",
+				"git: status"
+			],
+			[
+				"start",
+				"Wallaby.js: Start"
+			],
+			[
+				"run",
+				"Wallaby.js: Run file tests"
+			],
+			[
+				"file test",
+				"Wallaby.js: Run file tests"
+			],
+			[
+				"",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"walla",
+				"Wallaby.js: Start"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"wallaby file",
+				"Wallaby.js: Run file tests"
+			],
+			[
+				"pull",
+				"git: pull"
+			],
+			[
+				"file tests",
+				"Wallaby.js: Run file tests"
+			],
+			[
+				"checkout ",
+				"git: checkout"
+			],
+			[
+				"git check",
+				"git: checkout"
+			],
+			[
+				"add",
+				"git: add (edit)"
+			],
+			[
+				"git add",
+				"git: add (edit)"
+			],
+			[
+				"ignore",
+				"git: ignore pattern"
+			],
+			[
+				"fetch",
+				"git: fetch"
+			],
+			[
+				"git checkout",
+				"git: checkout"
+			],
+			[
+				"git pull",
+				"git: pull"
+			],
+			[
+				"gitsavvy",
+				"GitSavvy: help"
+			],
+			[
+				"gitgutter",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"git",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"install theme",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"theme",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"u",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"updat",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"fixmy",
+				"FixMyJS"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"paka",
+				"Package Control: List Packages"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 309.0,
+		"history":
+		[
+			"sublime.platform()",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Meyer/Source/clean-architecture-demo",
+		"/Users/Meyer/Source/clean-architecture-demo/dist",
+		"/Users/Meyer/Source/clean-architecture-demo/src",
+		"/Users/Meyer/Source/clean-architecture-demo/src/models",
+		"/Users/Meyer/Source/clean-architecture-demo/src/models/Todo",
+		"/Users/Meyer/Source/clean-architecture-demo/test",
+		"/Users/Meyer/Source/clean-architecture-demo/test/entities"
+	],
+	"file_history":
+	[
+		"/Users/Meyer/Source/clean-architecture-demo/src/models/Todo/index.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/models/index.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/entities/Todo/index.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/entities/index.js",
+		"/Users/Meyer/Source/clean-architecture-demo/test/example.test.js",
+		"/Users/Meyer/Source/clean-architecture-demo/.eslintrc",
+		"/Users/Meyer/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/Meyer/Source/clean-architecture-demo/wallaby.js",
+		"/Users/Meyer/Source/clean-architecture-demo/.eslintrc.json",
+		"/Users/Meyer/Source/clean-architecture-demo/package.json",
+		"/Users/Meyer/Source/clean-architecture-demo/.babelrc",
+		"/Users/Meyer/Source/clean-architecture-demo/README.md",
+		"/Users/Meyer/Source/clean-architecture-demo/src/main.js",
+		"/Users/Meyer/Source/clean-architecture-demo/webpack.config.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/template.html",
+		"/Users/Meyer/Source/shibumi/.git/COMMIT_EDITMSG",
+		"/Users/Meyer/Source/shibumi/.git/rebase-merge/git-rebase-todo",
+		"/Users/Meyer/Source/todo/source/entities/todoCollectionEntity.js",
+		"/Users/Meyer/Source/todo/source/entities/todoEntity.js",
+		"/Users/Meyer/Source/todo/webpack.config.babel.js",
+		"/Users/Meyer/Source/todo/source/actions.js",
+		"/Users/Meyer/Source/todo/source/entities/test/userEntity.test.js",
+		"/Users/Meyer/Source/todo/source/template.html",
+		"/Users/Meyer/Source/todo/wallaby.js",
+		"/Users/Meyer/Source/todo/source/entities/test/todoEntity.test.js",
+		"/Users/Meyer/Source/todo/source/entities/test/userCollection.test.js",
+		"/Users/Meyer/Library/Application Support/Sublime Text 3/Packages/User/FlowIDE.sublime-settings",
+		"/Users/Meyer/Library/Application Support/Sublime Text 3/Packages/User/GitGutter.sublime-settings",
+		"/Users/Meyer/Library/Application Support/Sublime Text 3/Packages/Wallaby/Wallaby.sublime-settings",
+		"/Users/Meyer/Library/Application Support/Sublime Text 3/Packages/User/Wallaby.sublime-settings",
+		"/Users/Meyer/Source/todo/lib/immutable.js",
+		"/Users/Meyer/Source/todo/.flowconfig",
+		"/Users/Meyer/Source/todo/package.json",
+		"/Users/Meyer/Source/todo/.babelrc",
+		"/Users/Meyer/Source/todo/source/entities/userEntity.test.js",
+		"/Users/Meyer/Source/todo/source/entities/userCollection.test.js",
+		"/Users/Meyer/Source/todo/source/entities/eventEntity.test.js",
+		"/Users/Meyer/Source/todo/source/entities/LookupTable.js",
+		"/Users/Meyer/Source/todo/source/entities/userEntity.js",
+		"/Users/Meyer/Source/shibumi/.git/MERGE_MSG",
+		"/Users/Meyer/Source/todo/constants.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/collaboration.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/test/views/admin/chartColorList.test.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/reportView.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/tiles/managedLayout.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/objectHeader.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/knockout.mapper.js",
+		"/Users/Meyer/Source/shibumi/.git/addp-hunk-edit.diff",
+		"/Users/Meyer/Source/shibumi/database/ga-69/ga-69_schema_conversion.sql",
+		"/Users/Meyer/Source/shibumi/.blaze/blaze.java",
+		"/Users/Meyer/Source/shibumi/database/ga-68/ga-68_schema_conversion.sql",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/require-config.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/asyncHandler.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/visibleTo.html",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/pages/TabbedSummary.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/tiles/managedTile.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/components/timeframeChart.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/tiles/workPlanTile.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/tiles/dropPanelTile.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/utils.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/admin/customBranding.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/asyncInsert.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/app.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/pages/WorkItemSummary.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/bindings/jqueryWidget.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/knockout-3.4.0.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/components/tabularChart.utils.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/toolTips.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/placeholders.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/widgetCharts.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/viewStyleRows.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/validation.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/UXfixes.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/triggers.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/tours.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/toggles.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/template.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/tabs.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/tableRows.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/showMore.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/scripts.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/richTextEditing.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/navigation.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/messaging.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/actions.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/listOptions.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/jExtensions.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/inView.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/infiniteScroll.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/helpers.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/errorHandler.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi-bootstrap.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/help.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/frontEndFtw.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/formInit.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/filters2.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/filters.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/bindings/filters.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/enterprise.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/enhanceUI.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/viewModels/application.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/comments.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/dialogs/addAttachment.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/requirejs-include.tag",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/tinysort.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/knockout.command.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/knockout-bootstrap.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/array.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/document.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/copy-item.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/childReportList.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/attachments.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/admin.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/pages/PageFactory.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/stripped-top.tag",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/table/RowFactory.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/shell.tag",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/require.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/summaryTabs.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/tabbedView.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/components/dropdownMessages.js",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/main-bottom.tag",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/main-top.tag",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/highchartsFactory.js",
+		"/Users/Meyer/Desktop/notes.md",
+		"/Users/Meyer/Source/shibumi/src/main/webapp/views/constituentActualValue.js",
+		"/Users/Meyer/Source/shibumi/Shibumi-Presentation.sublime-project"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 107.0,
+		"where_history":
+		[
+			"*.js",
+			"*",
+			"*.js",
+			"*",
+			"*.css",
+			"*.js",
+			"*.java",
+			"*.js",
+			"*.java",
+			"*.js",
+			"*.java",
+			"*.js",
+			"*.java",
+			"*.js",
+			"*.java",
+			"*.js",
+			"*.test.js",
+			"*.js",
+			"*.java",
+			"*.js",
+			"*",
+			"*.java",
+			"*.html",
+			"*.css",
+			"*.jsp",
+			"*.js",
+			"*",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*",
+			"*.jsp",
+			"*.css",
+			"*.html",
+			"*.js",
+			"*.hbs",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*",
+			"*.js",
+			"*.css",
+			"*.scss",
+			"*.scs",
+			"*",
+			"*.js",
+			"*.html",
+			"*.css",
+			"*.scs",
+			"*.html",
+			"*",
+			"*.css",
+			"*.scss",
+			"*.scssleft",
+			"*.scss",
+			"*.s?css",
+			"*.css",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*",
+			"*.css",
+			"*.js",
+			"*.java",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*",
+			"*.tag",
+			"*.jsp",
+			"*.tag",
+			"*.jsp",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.css",
+			"*.html",
+			"",
+			"*.css",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*",
+			"*.css",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.css",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.java",
+			"*.html",
+			"*.js",
+			"*.html",
+			"*.js",
+			"*.java",
+			"*.css",
+			"*.html",
+			"*.js",
+			"*",
+			"*.js",
+			"*.html",
+			"*.sql",
+			"*.html",
+			"*.java",
+			"*.js",
+			"*.sql",
+			"*",
+			"*.html",
+			"*.css",
+			"*",
+			"*.html",
+			"*.sql",
+			"*.java"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console",
+			"TodoEntity",
+			"entities",
+			"{\n",
+			"source",
+			"getTodoByID",
+			"findEntry",
+			"getCreatorID",
+			"creationDate",
+			"TodoRecord",
+			"findEntry",
+			"userPayload",
+			"userEntity.empty()",
+			"indexByID",
+			"getModel",
+			"utils",
+			"mapping.",
+			"computed",
+			"makeGridstackWidget",
+			"makeGridstack",
+			"visibleTo.",
+			"subject.",
+			"visibleTo.",
+			"mapper",
+			"fromJS",
+			"getType",
+			"tabularview",
+			"mapping.toJS",
+			".report.",
+			".report",
+			"model.report",
+			"mapping.",
+			"uidb",
+			"toJS",
+			"viewModel.",
+			".subject",
+			"mappin",
+			"mapper.",
+			"visibleTo",
+			"resolveFrom",
+			"$default",
+			"context",
+			"mapping.FromJs",
+			"asyncHandler",
+			"require(",
+			"require",
+			"async",
+			"require async",
+			"async.schedule",
+			"doasyn",
+			"doAsync",
+			"requestIdleCallback",
+			"shibumiReady",
+			"messaging",
+			"shibumiReady",
+			"asyncInsert",
+			"tinysort",
+			"scrollIntoView(",
+			"scrollIntoView",
+			"dotdotdot",
+			"command",
+			"ko.command",
+			"array",
+			".ready(",
+			"performance.now",
+			"performance",
+			"PageFactory",
+			"retrievePageModel",
+			"requestAnimationFrame(",
+			"requestAnimationFrame",
+			"console.group",
+			"requestIdleCallback",
+			"applybind",
+			"Row(",
+			"Row",
+			"initializeChart",
+			"mapping",
+			"mapper",
+			"filter",
+			"group(",
+			"fromJS",
+			"knockout-mapping",
+			".fromJS(",
+			"jQuery JavaScript Library v1.10.2",
+			"stripped-top",
+			"Arimo",
+			"genericSelect",
+			"summary?_",
+			"initializeChart",
+			"getAxisMargins",
+			"buildConstru",
+			"buildHi",
+			"buildseries",
+			"buildColor",
+			"buildChartSeries",
+			"buildchartSeries",
+			"effe",
+			"color",
+			"buildColor(",
+			"bucketColors",
+			"buildColor",
+			"color",
+			"tabularChart",
+			"chartsettings",
+			"effectiveChartColors",
+			"initializeChart",
+			"highchartsFactory",
+			"timeframe",
+			"initializeChart",
+			"buildColor",
+			"bucketcolors",
+			"gethigh",
+			"chartOptions",
+			"getViewModel",
+			"chartoptions",
+			"chartOptions(",
+			"chartOptions",
+			"promise",
+			"chart",
+			"getchartcolors",
+			"buildConstructorOptions",
+			"aggrega",
+			"//",
+			"columnToolbarOptions",
+			".columnToolbar(",
+			".columnToolbar({",
+			"ColumnToolbar({",
+			"aggregationColumnArchetype"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"userCollection.empty()",
+			"mapper.toJS",
+			"TabularTileSettingsComponent",
+			"",
+			"TabularTileSettingsComponent",
+			"classNames(",
+			"classnames(",
+			"optionLabelKey",
+			"optionValueKey",
+			"Key.codes.up",
+			"Key.codes.tab",
+			"Key.codes.down",
+			"Key.codes.space",
+			"Key.code.",
+			"Key.code",
+			"it(",
+			"\"",
+			"Key.keyIn",
+			"left-col selector-label",
+			"value:",
+			"tier",
+			"",
+			"form-group",
+			"col-md-10 col-sm-12",
+			"col-md-2 col-sm-12",
+			"width",
+			"_getLeftPosition",
+			"tabbedView__tab-list",
+			".shibumi__tabs",
+			"shibumi__tabs",
+			"",
+			"multi-factor-authentication",
+			"",
+			"this.options.template",
+			"define",
+			"this.options.template",
+			" 0",
+			"",
+			"\"",
+			"components",
+			"\\n",
+			"",
+			"\"], cb);",
+			"require([\"",
+			"views/table/cells",
+			"salesforceOrgChart.utils",
+			"views/table/columnUtils",
+			"let shibumi = require(\"shibumi-bootstrap\");\\nshibumi.then(shibumiReady);",
+			"gif",
+			"png",
+			".png",
+			"require(\"views/components/dropdownMessages\")",
+			"require(\"business/metaData\")",
+			"require(\"business/tokens\")",
+			"\\\"",
+			"/\"",
+			"\\\"",
+			"\"src/libs/",
+			"'",
+			"require(\"shibumi-bootstrap\")",
+			"./shibumi",
+			"path.resolve(__dirname, \"",
+			"\"",
+			"'",
+			"spectrum-colorpicker",
+			"jquery-ui",
+			"",
+			"require('",
+			"require(\"",
+			"computed",
+			".shibumi__tile-settings",
+			"fa fa-fw",
+			".shibumi__basicTile",
+			"",
+			"\",\\n\"",
+			"\",\"\\n",
+			";\\n",
+			"",
+			"restService",
+			"'",
+			"require('",
+			"require(\"",
+			"raw!",
+			"shibumi__settings-right",
+			"shibumi__basicTile-header",
+			"basicTile-content",
+			"basicTile-header",
+			".shibumi__basicTile",
+			"\\n",
+			"",
+			")",
+			"(",
+			"'data-toggle': 'tooltip', 'data-placement': 'bottom', 'title': name",
+			"data-toggle=\"tooltip\" data-placement=\"bottom\" title",
+			"dropdown-submenu-shibumi",
+			"0;",
+			"",
+			"dragUtils.BoundingBox(",
+			"dragUtils.BoundingBox()",
+			"dragUtils.Point",
+			"Highcharts",
+			"shibumi.shibumi-tooltip",
+			"template: { name: 'elements/owner' }",
+			"owner"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "webpack.config.babel.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								229,
+								229
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								2,
+								7,
+								16,
+								41,
+								29,
+								0,
+								0,
+								0,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1486509202.26
+							},
+							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/webpack.config.babel.js",
+							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								152,
+								152
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								2,
+								7,
+								16,
+								59,
+								25,
+								0,
+								0,
+								0,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1486509202.26
+							},
+							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/src/main.js",
+							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/models/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 56,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								2,
+								8,
+								13,
+								7,
+								1,
+								0,
+								0,
+								0,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1486509202.26
+							},
+							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/src/models/index.js",
+							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/models/Todo/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 71,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								2,
+								8,
+								13,
+								7,
+								34,
+								0,
+								0,
+								0,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1486509202.26
+							},
+							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/src/models/Todo/index.js",
+							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test/entities/TodoEntity.test.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								2,
+								7,
+								23,
+								11,
+								1,
+								0,
+								0,
+								0,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1486509202.26
+							},
+							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/test/entities/TodoEntity.test.js",
+							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
+							"open_with_edit": true,
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6922,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										147,
+										154
+									],
+									[
+										347,
+										354
+									],
+									[
+										389,
+										396
+									],
+									[
+										613,
+										620
+									],
+									[
+										625,
+										632
+									],
+									[
+										645,
+										652
+									],
+									[
+										666,
+										673
+									],
+									[
+										784,
+										791
+									],
+									[
+										967,
+										974
+									],
+									[
+										1020,
+										1027
+									],
+									[
+										1187,
+										1194
+									],
+									[
+										1266,
+										1273
+									],
+									[
+										1288,
+										1295
+									],
+									[
+										1344,
+										1351
+									],
+									[
+										1357,
+										1364
+									],
+									[
+										1500,
+										1507
+									],
+									[
+										1603,
+										1610
+									],
+									[
+										1752,
+										1759
+									],
+									[
+										2051,
+										2058
+									],
+									[
+										2426,
+										2433
+									],
+									[
+										2529,
+										2536
+									],
+									[
+										2691,
+										2698
+									],
+									[
+										2805,
+										2812
+									],
+									[
+										2927,
+										2934
+									],
+									[
+										3092,
+										3099
+									],
+									[
+										3316,
+										3323
+									],
+									[
+										3532,
+										3539
+									],
+									[
+										3613,
+										3620
+									],
+									[
+										3806,
+										3813
+									],
+									[
+										3989,
+										3996
+									],
+									[
+										4071,
+										4078
+									],
+									[
+										4192,
+										4199
+									],
+									[
+										4399,
+										4406
+									],
+									[
+										4513,
+										4520
+									],
+									[
+										4795,
+										4802
+									],
+									[
+										4812,
+										4819
+									],
+									[
+										5003,
+										5010
+									],
+									[
+										5296,
+										5303
+									],
+									[
+										5386,
+										5393
+									],
+									[
+										5680,
+										5687
+									],
+									[
+										6090,
+										6097
+									],
+									[
+										6303,
+										6310
+									],
+									[
+										6321,
+										6328
+									],
+									[
+										6346,
+										6353
+									],
+									[
+										6516,
+										6523
+									],
+									[
+										6544,
+										6551
+									],
+									[
+										6773,
+										6780
+									],
+									[
+										6860,
+										6867
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								200,
+								200
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": null,
+								"current_syntax": "Default/Find Results",
+								"enabled": false,
+								"last_updated": 1486509202.26
+							},
+							"default_dir": "/Users/Meyer/Source/clean-architecture-demo",
+							"detect_indentation": false,
+							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wallaby.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								2,
+								7,
+								17,
+								35,
+								11,
+								0,
+								0,
+								0,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1486509202.26
+							},
+							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/wallaby.js",
+							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 62.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/models/Todo/TodoModel.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								225,
+								2,
+								8,
+								13,
+								3,
+								56,
+								0,
+								0,
+								0,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1486509202.26
+							},
+							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/src/entities/Todo/TodoEntity.js",
+							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
+							"open_with_edit": true,
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 261.0
+	},
+	"output.exec":
+	{
+		"height": 170.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.wallabyjs":
+	{
+		"height": 256.0
+	},
+	"output.wallabyjs_console":
+	{
+		"height": 227.0
+	},
+	"pinned_build_system": "",
+	"project": "clean-architecture-demo.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"action",
+				"source/actions.js"
+			],
+			[
+				"template",
+				"source/template.html"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"userent",
+				"source/entities/test/userEntity.test.js"
+			],
+			[
+				"colla",
+				"src/main/webapp/views/collaboration.js"
+			],
+			[
+				"utils.test",
+				"src/main/webapp/test/js/utils.test.js"
+			],
+			[
+				"utils.j",
+				"src/main/webapp/js/utils.js"
+			],
+			[
+				"report",
+				"src/main/webapp/views/reportView.js"
+			],
+			[
+				"async",
+				"src/main/webapp/js/asyncHandler.js"
+			],
+			[
+				"objectheader",
+				"src/main/webapp/views/objectHeader.js"
+			],
+			[
+				"workitemsu",
+				"src/main/webapp/pages/WorkItemSummary.js"
+			],
+			[
+				"pagefac",
+				"src/main/webapp/pages/PageFactory.js"
+			],
+			[
+				"chartcolorlist.test",
+				"src/main/webapp/test/views/admin/chartColorList.test.js"
+			],
+			[
+				"require-con",
+				"src/main/webapp/js/require-config.js"
+			],
+			[
+				"ganttchart.test",
+				"src/main/webapp/test/ganttChart.utils.test.js"
+			],
+			[
+				"utils",
+				"src/main/webapp/js/utils.js"
+			],
+			[
+				"reportview.js",
+				"src/main/webapp/views/reportView.js"
+			],
+			[
+				"rep",
+				"src/main/webapp/views/reportView.js"
+			],
+			[
+				"coll",
+				"src/main/webapp/views/collaboration.js"
+			],
+			[
+				"knockout.mapper",
+				"src/main/webapp/libs/js/knockout.mapper.js"
+			],
+			[
+				"tabularview.js",
+				"src/main/webapp/views/components/tabularView.js"
+			],
+			[
+				"objectlisttile.js",
+				"src/main/webapp/views/tiles/objectListTile.js"
+			],
+			[
+				"blaze",
+				".blaze/blaze.java"
+			],
+			[
+				"blaze.java",
+				".blaze/blaze.java"
+			],
+			[
+				"collabor",
+				"src/main/webapp/views/collaboration.html"
+			],
+			[
+				"visibleto.html",
+				"src/main/webapp/views/visibleTo.html"
+			],
+			[
+				"knockout",
+				"src/main/webapp/js/knockout-bootstrap.js"
+			],
+			[
+				"summarytabs.j",
+				"src/main/webapp/views/summaryTabs.js"
+			],
+			[
+				"tabbedsumm",
+				"src/main/webapp/pages/TabbedSummary.js"
+			],
+			[
+				"objecthead",
+				"src/main/webapp/views/objectHeader.js"
+			],
+			[
+				"collaboration",
+				"src/main/webapp/views/collaboration.js"
+			],
+			[
+				"reportview.",
+				"src/main/webapp/views/reportView.js"
+			],
+			[
+				"objectheader.js",
+				"src/main/webapp/views/objectHeader.js"
+			],
+			[
+				"asynchand",
+				"src/main/webapp/js/asyncHandler.js"
+			],
+			[
+				"droppaneltile.",
+				"src/main/webapp/views/tiles/dropPanelTile.js"
+			],
+			[
+				"utils.js",
+				"src/main/webapp/js/utils.js"
+			],
+			[
+				"droppaneltile.js",
+				"src/main/webapp/views/tiles/dropPanelTile.js"
+			],
+			[
+				"workplantile",
+				"src/main/webapp/views/tiles/workPlanTile.js"
+			],
+			[
+				"managedtile.js",
+				"src/main/webapp/views/tiles/managedTile.js"
+			],
+			[
+				"droppaneltile",
+				"src/main/webapp/views/tiles/dropPanelTile.js"
+			],
+			[
+				"workplantile.js",
+				"src/main/webapp/views/tiles/workPlanTile.js"
+			],
+			[
+				"jquerywidget",
+				"src/main/webapp/js/bindings/jqueryWidget.js"
+			],
+			[
+				"kncokout.js",
+				"src/main/webapp/libs/js/knockout-3.4.0.js"
+			],
+			[
+				"workitemsumm",
+				"src/main/webapp/pages/WorkItemSummary.js"
+			],
+			[
+				"shibumi-boo",
+				"src/main/webapp/js/shibumi-bootstrap.js"
+			],
+			[
+				"help.js",
+				"src/main/webapp/js/shibumi/help.js"
+			],
+			[
+				"fronten",
+				"src/main/webapp/js/shibumi/frontEndFtw.js"
+			],
+			[
+				"forminit",
+				"src/main/webapp/js/shibumi/formInit.js"
+			],
+			[
+				"filters2.js",
+				"src/main/webapp/js/shibumi/filters2.js"
+			],
+			[
+				"filters.js",
+				"src/main/webapp/js/shibumi/filters.js"
+			],
+			[
+				"enterprise.js",
+				"src/main/webapp/js/shibumi/enterprise.js"
+			],
+			[
+				"enhance",
+				"src/main/webapp/js/shibumi/enhanceUI.js"
+			],
+			[
+				"comments.js",
+				"src/main/webapp/js/shibumi/comments.js"
+			],
+			[
+				"application",
+				"src/main/webapp/js/viewModels/application.js"
+			],
+			[
+				"placehodler",
+				"src/main/webapp/js/placeholders.js"
+			],
+			[
+				"shibumi.js",
+				"src/main/webapp/js/shibumi.js"
+			],
+			[
+				"require",
+				"src/main/webapp/js/require-config.js"
+			],
+			[
+				"application.js",
+				"src/main/webapp/js/viewModels/application.js"
+			],
+			[
+				"array.js",
+				"src/main/webapp/libs/js/array.js"
+			],
+			[
+				"shibumiboo",
+				"src/main/webapp/js/shibumi-bootstrap.js"
+			],
+			[
+				"shibumi-boot",
+				"src/main/webapp/js/shibumi-bootstrap.js"
+			],
+			[
+				"pagefactor",
+				"src/main/webapp/pages/PageFactory.js"
+			],
+			[
+				"tabbedv",
+				"src/main/webapp/views/tabbedView.js"
+			],
+			[
+				"summarytabs.js",
+				"src/main/webapp/views/summaryTabs.js"
+			],
+			[
+				"tabbedsu",
+				"src/main/webapp/pages/TabbedSummary.js"
+			],
+			[
+				"rowfa",
+				"src/main/webapp/js/table/RowFactory.js"
+			],
+			[
+				"timeframechart.js",
+				"src/main/webapp/views/components/timeframeChart.js"
+			],
+			[
+				"collaboration.js",
+				"src/main/webapp/views/collaboration.js"
+			],
+			[
+				"workitemsummary.js",
+				"src/main/webapp/pages/WorkItemSummary.js"
+			],
+			[
+				"dropdownmes",
+				"src/main/webapp/views/components/dropdownMessages.js"
+			],
+			[
+				"require.js",
+				"src/main/webapp/libs/js/require.js"
+			],
+			[
+				"stripped",
+				"src/main/webapp/WEB-INF/tags/stripped-top.tag"
+			],
+			[
+				"main-top",
+				"src/main/webapp/WEB-INF/tags/main-top.tag"
+			],
+			[
+				".tag",
+				"src/main/webapp/WEB-INF/tags/main-bottom.tag"
+			],
+			[
+				".jsp",
+				"src/main/webapp/WEB-INF/jsp/home.jsp"
+			],
+			[
+				"include",
+				"src/main/webapp/WEB-INF/tags/requirejs-include.tag"
+			],
+			[
+				"main-top.tag",
+				"src/main/webapp/WEB-INF/tags/main-top.tag"
+			],
+			[
+				"managed",
+				"src/main/webapp/views/tiles/managedLayout.js"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"tabularchart.js",
+				"src/main/webapp/views/components/tabularChart.js"
+			],
+			[
+				"tabularchartutils",
+				"src/main/webapp/views/components/tabularChart.utils.js"
+			],
+			[
+				"pagedata",
+				"src/main/java/com/shibumi/platform/pages/services/PageDataService.java"
+			],
+			[
+				"chartcolors",
+				"src/main/webapp/utilities/chartColors.js"
+			],
+			[
+				"chartcolorlist",
+				"src/main/webapp/views/admin/chartColorList.js"
+			],
+			[
+				"custombrand",
+				"src/main/webapp/views/admin/customBranding.js"
+			],
+			[
+				"enterprisedao",
+				"src/main/java/com/shibumi/platform/persistence/dao/EnterpriseDaoImpl.java"
+			],
+			[
+				"numeral",
+				"src/main/webapp/libs/js/numeral.js"
+			],
+			[
+				"rooth",
+				"src/main/webapp/stormtrooper/mocha-root-hooks.js"
+			],
+			[
+				"supported",
+				"src/main/webapp/WEB-INF/jsp/supportedBrowsers.jsp"
+			],
+			[
+				"supporte",
+				"src/main/java/com/shibumi/presentation/main/SupportedBrowserFilter.java"
+			],
+			[
+				"timeframechart.util",
+				"src/main/webapp/views/components/timeframeChart.utils.js"
+			],
+			[
+				"tabulardat",
+				"src/main/webapp/views/tiles/tabularDataTile.utils.js"
+			],
+			[
+				"high",
+				"src/main/webapp/js/highchartsFactory.js"
+			],
+			[
+				"chartlist",
+				"src/main/webapp/test/views/admin/chartColorList.test.js"
+			],
+			[
+				"highchartsc",
+				"src/main/webapp/js/highchartsFactory.js"
+			],
+			[
+				"datas",
+				"src/main/java/com/shibumi/platform/pages/services/PageDataService.java"
+			],
+			[
+				"branding.html",
+				"src/main/webapp/views/admin/customBranding.html"
+			],
+			[
+				"validationtoo",
+				"src/main/webapp/js/bindings/validationTooltip.js"
+			],
+			[
+				"gridstack.css",
+				"src/main/webapp/libs/gridstack/gridstack.css"
+			],
+			[
+				"dragtable.css",
+				"src/main/webapp/libs/jquery.dragtable/dragtable.css"
+			],
+			[
+				"highchartsfact",
+				"src/main/webapp/js/highchartsFactory.js"
+			],
+			[
+				"custombranding",
+				"src/main/webapp/views/admin/customBranding.js"
+			],
+			[
+				"columnutils.test",
+				"src/main/webapp/test/js/table/columnUtils.test.js"
+			],
+			[
+				"columnu",
+				"src/main/webapp/js/table/columnUtils.js"
+			],
+			[
+				"wallab",
+				"src/main/webapp/stormtrooper/wallaby.js"
+			],
+			[
+				"label.test.js",
+				"src/main/webapp/stormtrooper/src/core/Label/Label.test.js"
+			],
+			[
+				"chartcol",
+				"src/main/webapp/utilities/chartColors.js"
+			],
+			[
+				"timeframechartut",
+				"src/main/webapp/views/components/timeframeChart.utils.js"
+			],
+			[
+				"timechart",
+				"src/main/webapp/views/components/timeframeChart.js"
+			],
+			[
+				"database/ga-69",
+				"database/ga-69/ga-69_schema_conversion.sql"
+			],
+			[
+				"navbar.js",
+				"src/main/webapp/views/navbar.js"
+			],
+			[
+				"rest.js",
+				"src/main/webapp/js/services/rest.js"
+			],
+			[
+				"enterpriseservie",
+				"src/main/java/com/shibumi/platform/services/EnterpriseServiceImpl.java"
+			],
+			[
+				"enterpriseserviceim",
+				"src/main/java/com/shibumi/platform/services/EnterpriseServiceImpl.java"
+			],
+			[
+				"enterpriseser",
+				"src/main/java/com/shibumi/platform/services/EnterpriseService.java"
+			],
+			[
+				"customimage",
+				"src/main/webapp/views/customImageTileCreateForm.html"
+			],
+			[
+				"upload",
+				"src/main/webapp/views/uploadPhoto.css"
+			],
+			[
+				"uploadph",
+				"src/main/webapp/views/uploadPhoto.html"
+			],
+			[
+				"custombranding.css",
+				"src/main/webapp/views/admin/customBranding.css"
+			],
+			[
+				"branding",
+				"src/main/webapp/views/admin/customBranding.js"
+			],
+			[
+				"admintabbed",
+				"src/main/webapp/views/admin/adminTabbedView.utils.js"
+			],
+			[
+				"dynami",
+				"src/main/webapp/views/dynamicFilters.html"
+			],
+			[
+				"dyn",
+				"src/main/webapp/views/dynamicFilters.js"
+			],
+			[
+				"refac",
+				"src/main/webapp/css/refactor.css"
+			],
+			[
+				"key.js",
+				"src/main/webapp/stormtrooper/src/core/Utility/Key.js"
+			],
+			[
+				"chartcolorlist.css",
+				"src/main/webapp/views/admin/chartColorList.css"
+			],
+			[
+				"components.js",
+				"src/main/webapp/stormtrooper/src/core/PickList/components.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Development/armored-warfare/client/armored-warfare-client.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 1130.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 329.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

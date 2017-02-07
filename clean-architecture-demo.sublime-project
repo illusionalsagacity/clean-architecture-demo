@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+      "name": "Clean Architecture Demo",
+      "folder_exclude_patterns":
+      [
+        "node_modules",
+        "dist"
+      ]
+    }
+	],
+  "settings":
+  {
+    "tab_size": 2
+  }
+}
