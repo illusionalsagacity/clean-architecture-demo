@@ -27,19 +27,21 @@ export const todos = (state=initialState, action) => {
 
 //TODO: implement todoLists, redux-thunk
 
-const todoListState = new TodoListCollectionModel();
+const todoListsState = new TodoListCollectionModel();
 
 const todoList = (state, action) => {
   switch (action.type) {
+    case ADD_TODO_LIST:
+      return createTodoList(action.payload.id, action.payload.todoIDs);
     default:
       return state;
   }
 };
 
-export const todoLists = (state=todoListState, action) => {
+export const todoLists = (state=todoListsState, action) => {
   switch (action.type) {
     case ADD_TODO_LIST:
-      return addTodoList(state, createTodoList(action.payload.id, action.payload.todoIDs));
+      return addTodoList(state, todoList(undefined, action));
     default:
       return state;
   }
