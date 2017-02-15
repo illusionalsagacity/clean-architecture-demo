@@ -2,6 +2,11 @@
 
 import React from "react";
 import { render } from "react-dom";
+import { Provider } from "react-redux";
+import { TodoListContainer } from "Todo/containers";
+import store from "./store";
 
 
-render(<div>Hello World</div>, document.getElementById("react-mount"));
+render((<Provider store={store}>
+  <TodoListContainer id={0} />
+</Provider>), document.getElementById("react-mount"));
