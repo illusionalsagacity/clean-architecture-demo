@@ -1,7 +1,7 @@
 import actions from "./actions";
 import * as containers from "./containers";
-import * as models from "./models";
-import * as reducers from "./reducers";
+import models from "./models";
+import reducers from "./reducers";
 
 const Todo = {
   actions,
