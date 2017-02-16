@@ -16,12 +16,3 @@ export const remove = (id) => {
     payload: { id },
   };
 };
-
-export const ADD_TODO_LIST = "@todoList/ADD";
-
-export const addTodoList = (id, todoIDs) => {
-  return {
-    type: ADD_TODO_LIST,
-    payload: { id, todoIDs },
-  };
-};
