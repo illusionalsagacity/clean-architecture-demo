@@ -8,5 +8,11 @@ import store from "./store";
 
 
 render((<Provider store={store}>
-  <TodoListContainer id={0} />
+  <div>
+    <TodoListContainer id={0} />
+    <hr />
+    <TodoListContainer id={1} />
+    <hr />
+    <TodoListContainer id={2} />
+  </div>
 </Provider>), document.getElementById("react-mount"));

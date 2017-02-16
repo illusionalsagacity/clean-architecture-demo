@@ -16,3 +16,5 @@ export class TodoModel extends Record(_shape) {}
 export const create = (payload) => new TodoModel(payload);
 
 export const getID = (todoModel) => todoModel.id;
+
+export const getCreatorID = (todoModel) => todoModel.creatorID;
