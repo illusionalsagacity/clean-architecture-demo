@@ -2,8 +2,9 @@
 
 import { Record } from "immutable";
 
+type t_ID = number | string;
 
-const _shape = {
+const _shape: { description: string, id: t_ID, name: string, creatorID: t_ID } = {
   description: "",
   id: undefined,
   name: "",

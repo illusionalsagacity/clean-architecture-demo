@@ -1,7 +1,7 @@
 /* eslint no-magic-numbers: "off" */
 
 import test from "ava";
-import { ADD, REMOVE, add, remove } from "Todo/actions";
+import { ADD, REMOVE, add, remove } from "Todo/actions/todoActions";
 
 
 test(t => {
@@ -18,13 +18,14 @@ test(t => {
   t.truthy(add);
   const id = 0;
   const name = "test name";
+  const creatorID = 0;
   const description = "test description";
   const expected = {
     type: ADD,
-    payload: { id, name, description },
+    payload: { id, creatorID, name, description },
   };
 
-  t.deepEqual(add(id, name, description), expected);
+  t.deepEqual(add(id, creatorID, name, description), expected);
 });
 
 test(t => {

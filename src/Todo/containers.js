@@ -1,37 +1,59 @@
 "use strict";
 
 import { connect } from "react-redux";
+import { createSelector } from "reselect";
 import { TodoComponent, TodoListComponent } from "./components";
 import models from "./models";
 const { TodoModel, TodoCollection, TodoListCollection, UserCollection } = models;
 
-const getTodos = state => state.todos;
-const getTodoLists = state => state.todoLists;
-const getUsers = state => state.users;
 
-let Todo = {
-  mapStateToProps: (state, ownProps) => {
-    let todos = getTodos(state); // TODO: memoize using reselect
-    let users = getUsers(state);
-    let todo = TodoCollection.get(todos, ownProps.id);
-    let user = UserCollection.get(users, TodoModel.getCreatorID(todo));
+const todosSelector = state => state.todos;
+const todoIDSelector = (state, props) => props.todoID;
+
+const todoListsSelector = state => state.todoLists;
+const todoListIDSelector = (state, props) => props.todoListID;
+
+const usersSelector = state => state.users;
+const userIDSelector = (state, props) => props.userID;
+
+const makeTodoSelector = () => createSelector(
+  todosSelector,
+  todoIDSelector,
+  (todos, todoID) => TodoCollection.get(todos, todoID),
+);
+
+const makeUserSelector = () => createSelector(
+  usersSelector,
+  userIDSelector,
+  (users, userID) => UserCollection.get(users, userID),
+);
+
+const makeTodoMapStateToProps = () => {
+  const userSelector = makeUserSelector(),
+        todoSelector = makeTodoSelector();
+
+  const mapStateToProps = (state, ownProps) => {
+    const todo = todoSelector(state, ownProps),
+          user = userSelector(state, { userID: TodoModel.getCreatorID(todo) });
 
     return {
       description: todo.description,
       name: todo.name,
       userName: user.name,
     };
-  },
+  };
+
+  return mapStateToProps;
 };
 
 // TodoContainer takes in an ID for a todo
-export const TodoContainer = connect(Todo.mapStateToProps)(TodoComponent);
+export const TodoContainer = connect(makeTodoMapStateToProps())(TodoComponent);
 
 
 let TodoList = {
   mapStateToProps: (state, ownProps) => {
-    const todoLists = getTodoLists(state);
-    const todoList = TodoListCollection.get(todoLists, ownProps.id);
+    const todoLists = todoListsSelector(state);
+    const todoList = TodoListCollection.get(todoLists, ownProps.todoListID);
     const { todoIDs } = todoList;
 
     return {
