@@ -1,4 +1,4 @@
-import { ValidationService, TodoService } from "./services";
+import { createValidationService, createTodoService } from "./services";
 import actions from "./actions";
 const { todo, todoList } = actions;
 
@@ -24,28 +24,24 @@ const allTodosUsecase = (state) => {
  */
 
 // a use-case interactor
-const createAddTodoUsecase = ({ ValidationService, TodoService }) => {
+const createAddTodoUsecase = ({ createValidationService, createTodoService }) => {
 
   // the use case itself (which is a thunk)
   return (creatorID, name, description) => {
-    const { validateTodo } = ValidationService;
-    const { createTodo } = TodoService;
-
     return async (dispatch, getState) => {
-      let valid = await validateTodo(description, name, creatorID);
+    const { validateTodo } = createValidationService(dispatch, getState);
+    const { createTodo } = createTodoService(dispatch, getState);
 
-      if (valid) {
-        let { id } = await createTodo(description, name, creatorID);
-        dispatch(todo.add(id, creatorID, name, description));
-        dispatch(todoList.update("all", id));
-      } else {
-        // dispatch(error.add("Todo Validation Failed"));
+      let isValid = await validateTodo(description, name, creatorID);
+
+      if (isValid) {
+        let promise = await createTodo(description, name, creatorID);
       }
     };
   };
 };
 
 export default {
-  addTodoUsecase: createAddTodoUsecase({ ValidationService, TodoService }),
+  addTodoUsecase: createAddTodoUsecase({ createValidationService, createTodoService }),
   allTodosUsecase,
 };
