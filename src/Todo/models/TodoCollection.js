@@ -42,4 +42,10 @@ export const get = (todoCollection, id) => {
   return todoCollection.todos.get(i);
 };
 
-export const getIndicesByCreatorID = (todoCollection, ownerID) => ReverseLookup.get(todoCollection.creatorTable, ownerID).toArray();
+const getIndicesByCreatorID = (todoCollection, ownerID) => ReverseLookup.get(todoCollection.creatorTable, ownerID).toArray();
+
+export const getIDsByCreatorID = (todoCollection, ownerID) => {
+  debugger;
+  let indices = getIndicesByCreatorID(todoCollection, ownerID);
+  return indices.map(i => todoCollection.todos.get(i).id);
+};

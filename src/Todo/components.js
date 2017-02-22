@@ -34,3 +34,43 @@ export class TodoListComponent extends Component {
     </div>);
   }
 }
+
+export class TodoFormComponent extends Component {
+  static propTypes = {
+    addTodo: PropTypes.func,
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      description: "",
+    };
+  }
+
+  handleNameChange = (e) => {
+    this.setState({ name: e.target.value });
+  };
+
+  handleDescriptionChange = (e) => {
+    this.setState({ description: e.target.value });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, description } = this.state;
+    this.props.addTodo(name, description);
+    this.setState({
+      description: "",
+      name: "",
+    });
+  };
+
+  render() {
+    return (<form className="TodoForm" onSubmit={this.handleSubmit}>
+      <input className="TodoForm__name" type="text" value={this.state.name} onChange={this.handleNameChange} />
+      <input className="TodoForm__description" type="text" value={this.state.description} onChange={this.handleDescriptionChange} />
+      <input type="submit" value="Add Todo" />
+    </form>);
+  }
+}

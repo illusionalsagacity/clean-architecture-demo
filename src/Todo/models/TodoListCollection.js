@@ -25,15 +25,37 @@ export const add = (todoListCollection, todoList) => {
 };
 
 export const remove = (todoListCollection, id) => {
-  return todoListCollection.withMutations(state => {
-    let i = ReverseLookup.get(state.indexTable, id).first();
-    state
-      .update("todoList", todoList => todoList.remove(i))
-      .update("indexTable", indexTable => ReverseLookup.remove(indexTable, id));
-  });
+  let set = ReverseLookup.get(todoListCollection.indexTable, id);
+
+  if (set) {
+    return todoListCollection.withMutations(state => {
+      let i = set.first();
+      state
+        .update("todoList", todoList => todoList.remove(i))
+        .update("indexTable", indexTable => ReverseLookup.remove(indexTable, id));
+    });
+  }
+
+  return todoListCollection;
+};
+
+export const update = (todoListCollection, id, todoList) => {
+  let set = ReverseLookup.get(todoListCollection.indexTable, id);
+
+  if (set) {
+    let i = set.first(); // one-to-one mapping for indexTable
+    return todoListCollection.update("todoLists", todoLists => todoLists.set(i, todoList));
+  }
+  return todoListCollection;
 };
 
 export const get = (todoListCollection, id) => {
-  let i = ReverseLookup.get(todoListCollection.indexTable, id).first(); // one-to-one mapping for indexTable
-  return todoListCollection.todoLists.get(i);
+  let set = ReverseLookup.get(todoListCollection.indexTable, id);
+
+  if (set) {
+    let i = set.first(); // one-to-one mapping for indexTable
+    return todoListCollection.todoLists.get(i);
+  }
+
+  return [];
 };

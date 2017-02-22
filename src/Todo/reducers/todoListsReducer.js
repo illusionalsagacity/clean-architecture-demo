@@ -1,8 +1,8 @@
 "use strict";
 
-import { ADD } from "../actions/todoListActions";
-import { create } from "../models/TodoListModel";
-import { add, remove, empty } from "../models/TodoListCollection";
+import { ADD, UPDATE } from "../actions/todoListActions";
+import * as TodoListModel from "../models/TodoListModel";
+import { add, remove, empty, get, update } from "../models/TodoListCollection";
 
 
 const initialState = empty;
@@ -10,7 +10,9 @@ const initialState = empty;
 const todoList = (state, action) => {
   switch (action.type) {
     case ADD:
-      return create(action.payload);
+      return TodoListModel.create(action.payload);
+    case UPDATE:
+      return TodoListModel.add(state, action.payload.todoID);
     default:
       return state;
   }
@@ -20,6 +22,10 @@ const todoLists = (state=initialState, action) => {
   switch (action.type) {
     case ADD:
       return add(state, todoList(undefined, action));
+    case UPDATE:
+      debugger;
+      let foo = todoList(get(state, action.payload.id), action);
+      return update(state, action.payload.id, foo);
     default:
       return state;
   }

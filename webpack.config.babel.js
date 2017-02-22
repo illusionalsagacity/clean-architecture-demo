@@ -16,7 +16,10 @@ const DEV_SOURCES = ["webpack/hot/dev-server", `webpack-dev-server/client?http:/
 const generateEntrySources = (sources) => !PRODUCTION ? DEV_SOURCES.concat(sources) : sources;
 
 module.exports = {
-  entry: [PATHS.entry],
+  entry: [
+    "babel-polyfill",
+    PATHS.entry,
+  ],
 
   output: {
     path: PATHS.dist,

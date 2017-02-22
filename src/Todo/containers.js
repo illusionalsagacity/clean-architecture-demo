@@ -2,19 +2,14 @@
 
 import { connect } from "react-redux";
 import { createSelector } from "reselect";
-import { TodoComponent, TodoListComponent } from "./components";
+import { TodoComponent, TodoListComponent, TodoFormComponent } from "./components";
 import models from "./models";
-const { TodoModel, TodoCollection, TodoListCollection, UserCollection } = models;
+const { TodoModel, TodoCollection, TodoListModel, TodoListCollection, UserCollection } = models;
+import { todosSelector, todoIDSelector, todoListsSelector, todoListIDSelector, usersSelector, userIDSelector } from "./selectors";
 
+import usecases from "./usecases";
+const { addTodoUsecase } = usecases;
 
-const todosSelector = state => state.todos;
-const todoIDSelector = (state, props) => props.todoID;
-
-const todoListsSelector = state => state.todoLists;
-const todoListIDSelector = (state, props) => props.todoListID;
-
-const usersSelector = state => state.users;
-const userIDSelector = (state, props) => props.userID;
 
 const makeTodoSelector = () => createSelector(
   todosSelector,
@@ -26,6 +21,12 @@ const makeUserSelector = () => createSelector(
   usersSelector,
   userIDSelector,
   (users, userID) => UserCollection.get(users, userID),
+);
+
+const makeTodoListSelector = () => createSelector(
+  todoListsSelector,
+  todoListIDSelector,
+  (todoLists, todoListID) => TodoListCollection.get(todoLists, todoListID),
 );
 
 const makeTodoMapStateToProps = () => {
@@ -49,19 +50,31 @@ const makeTodoMapStateToProps = () => {
 // TodoContainer takes in an ID for a todo
 export const TodoContainer = connect(makeTodoMapStateToProps())(TodoComponent);
 
+const makeTodoListMapStateToProps = () => {
+  const todoListSelector = makeTodoListSelector();
 
-let TodoList = {
-  mapStateToProps: (state, ownProps) => {
-    const todoLists = todoListsSelector(state);
-    const todoList = TodoListCollection.get(todoLists, ownProps.todoListID);
-    const { todoIDs } = todoList;
+  const mapStateToProps = (state, ownProps) => {
+    const todoList = todoListSelector(state, ownProps);
+    const todoIDs = TodoListModel.getTodoIDs(todoList);
 
     return {
       todoIDs,
     };
-  },
+  };
+
+  return mapStateToProps;
 };
 
 // TodoListContainer takes in an ID for a TodoList
 // todoLists: { id: TodoIDs[] }
-export const TodoListContainer = connect(TodoList.mapStateToProps)(TodoListComponent);
+export const TodoListContainer = connect(makeTodoListMapStateToProps())(TodoListComponent);
+
+
+export const TodoFormContainer = connect(undefined, (dispatch, ownProps) => {
+  return {
+    addTodo: (name, description) => {
+      debugger;
+      return dispatch(addTodoUsecase(ownProps.userID, name, description));
+    },
+  };
+})(TodoFormComponent);

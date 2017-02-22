@@ -22,6 +22,8 @@ module.exports = wallaby => {
       "**/*.js": wallaby.compilers.babel(),
     },
 
+    debug: true,
+
     setup: function (wallaby) {
       require("babel-polyfill");
     },

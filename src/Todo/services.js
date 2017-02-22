@@ -1,18 +1,23 @@
-"use strict";
+import shortid from "shortid";
 
-import { TodoCollectionModel, TodoModel } from "./models";
 
-const { create } = TodoModel;
-const { add } = TodoCollection;
+//TODO: actually call a REST endpoint.
+export const ValidationService = {
+  validateTodo: async (description, name, creatorID) => true,
+};
 
-let nextTodoID = 0;
 
-export default class TodoService {
-  static addTodo(todoCollection, description) {
-    return add(todoCollection, create(nextTodoID++, description));
-  }
-
-  static removeTodo(todoCollection, todo) {
-    return remove(todoCollection, todo);
-  }
+async function createTodo(description, name, creatorID) {
+  //TODO: actually call a REST endpoint.
+  debugger;
+  return {
+    id: shortid.generate(),
+    description,
+    name,
+    creatorID,
+  };
 }
+
+export const TodoService = {
+  createTodo,
+};

@@ -2,7 +2,9 @@ import Todo from "Todo";
 import { applyMiddleware, createStore, combineReducers } from "redux";
 import thunk from "redux-thunk";
 import Perf from "react-addons-perf";
-const { reducers, actions, models } = Todo;
+import shortid from "shortid";
+const { reducers, actions, models, usecases } = Todo;
+const { addTodoUsecase } = usecases;
 
 //use const for PROD
 let store = createStore(
@@ -19,32 +21,31 @@ let store = createStore(
 //   console.log(store.getState());
 // });
 
-let todoID = 0;
-let userID = 0;
+// let todoID = 0;
 
 // local store hydration
-store.dispatch(actions.user.add(userID++, `user ${userID}`));
-store.dispatch(actions.user.add(userID++, `user ${userID}`));
 
-store.dispatch(actions.todo.add(todoID++, 0, `Hello World - ${todoID}`, "Description"));
-store.dispatch(actions.todo.add(todoID++, 0, `Hello World - ${todoID}`, "Description"));
-store.dispatch(actions.todo.add(todoID++, 0, `Hello World - ${todoID}`, "Description"));
+// let userIDs = [];
 
-store.dispatch(actions.todo.add(todoID++, 1, `Hello World - ${todoID}`, "Description"));
-store.dispatch(actions.todo.add(todoID++, 1, `Hello World - ${todoID}`, "Description"));
-store.dispatch(actions.todo.add(todoID++, 1, `Hello World - ${todoID}`, "Description"));
+// for (let i = 0; i < 5; i++) {
+//   userIDs[i] = shortid.generate();
 
+//   store.dispatch(actions.user.add(userIDs[i], `user ${userIDs[i]}`));
+
+//   for (let j = 0; j < 10; j++) {
+//     let todoID = shortid.generate();
+//     store.dispatch(addTodoUsecase(userIDs[i], `Hello World - ${todoID}`, "Description"));
+//   }
+// }
 
 const getTodos = state => state.todos;
 
-let todosBy0 = models.TodoCollection.getIndicesByCreatorID(getTodos(store.getState()), 0);
-let todosBy1 = models.TodoCollection.getIndicesByCreatorID(getTodos(store.getState()), 1);
+// let todosBy0 = models.TodoCollection.getIDsByCreatorID(getTodos(store.getState()), userIDs[0]);
+// let todosBy1 = models.TodoCollection.getIDsByCreatorID(getTodos(store.getState()), userIDs[1]);
 
 //TODO: add user buckets to TodoCollection and query
-
-store.dispatch(actions.todoList.add(0, todosBy0));
-store.dispatch(actions.todoList.add(1, todosBy1));
-store.dispatch(actions.todoList.add(2, [0, 1, 2, 3, 4, 5]));
+// store.dispatch(actions.todoList.add(0, todosBy0));
+// store.dispatch(actions.todoList.add(1, todosBy1));
 
 
 export default store;
