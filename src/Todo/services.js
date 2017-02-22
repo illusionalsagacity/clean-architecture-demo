@@ -1,36 +1,6 @@
 import shortid from "shortid";
-import Todo from "Todo";
-const { actions } = Todo;
+import actions from "Todo/actions";
 
-
-async function validateTodo(description, name, creatorID) {
-  return api.validateTodo(description, name, creatorID)
-    .catch(console.error)
-    .then(data => data.json());
-}
-
-export const ValidationService = {
-  validateTodo,
-};
-
-export function createValidationService(dispatch, getState) {
-  var validateTodo = async (description, name, creatorID) => {
-    const validation = await api.validateTodo(description, name, creatorID)
-      .catch(console.error)
-      .then(data => data.json());
-
-    if (validation && validation.valid) {
-      return true;
-    }
-
-    console.error("Todo ValidationService failed");
-    return false;
-  };
-
-  return {
-    validateTodo,
-  };
-}
 
 const mockFetchResponse = (res) => {
   return { json: () => res };
@@ -60,17 +30,42 @@ const api = {
   },
 };
 
+export function createValidationService(dispatch, getState) {
+
+  var validateTodo = async (description, name, creatorID) => {
+    debugger;
+
+    const validation = await api.validateTodo(description, name, creatorID)
+      .catch(console.error)
+      .then(data => data.json());
+
+    if (validation && validation.valid) {
+      return true;
+    }
+
+    console.error("Todo ValidationService failed");
+    return false;
+  };
+
+  return {
+    validateTodo,
+  };
+}
+
 export function createTodoService(dispatch, getState) {
 
   var createTodo = async (description, name, creatorID) => {
+
     return api.createTodo(description, name, creatorID)
       .catch(console.error)
       .then(data => data.json())
       .then(payload => {
         let { id, creatorID, name, description } = payload;
+
         dispatch(actions.todo.add(id, creatorID, name, description));
         dispatch(actions.todoList.update("all", payload.id));
-      }).catch(console.error);
+      })
+      .catch(console.error);
   };
 
   return {

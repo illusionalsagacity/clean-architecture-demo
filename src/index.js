@@ -8,7 +8,7 @@ import store from "./store";
 import Perf from "react-addons-perf";
 import shortid from "shortid";
 
-import "./style.css";
+// import "./style.css";
 
 import Todo from "Todo";
 const { actions } = Todo;

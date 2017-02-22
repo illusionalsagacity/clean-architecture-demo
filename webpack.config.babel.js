@@ -1,6 +1,7 @@
 import path from "path";
 import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import UglifyJsPlugin from "uglifyjs-webpack-plugin";
 
 const PRODUCTION = process.env.NODE_ENV === "production";
 
@@ -24,7 +25,7 @@ module.exports = {
   output: {
     path: PATHS.dist,
     chunkFilename: PRODUCTION ? "[id]-[chunkhash].chunk.js" : "[id].chunk.js",
-    filename: PRODUCTION ? "[name]-[chunkhash].bundle.js" : "[name].bundle.js",
+    filename: PRODUCTION ? "[name]-[hash].bundle.js" : "[name].bundle.js",
   },
 
   module: {
@@ -40,8 +41,8 @@ module.exports = {
         include: [ PATHS.src ],
         exclude: [ path.resolve(__dirname, "node_modules") ],
         use: [
-          "style-loader",
           "css-loader",
+          "style-loader",
         ],
       },
     ],
@@ -71,6 +72,13 @@ module.exports = {
       template: path.resolve(PATHS.src, "template.html"),
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new UglifyJsPlugin({
+      compress: PRODUCTION,
+      beautify: !PRODUCTION,
+      extractCommends: PRODUCTION,
+      // output: { comments: false },
+      sourceMap: true,
+    }),
   ],
 
 };

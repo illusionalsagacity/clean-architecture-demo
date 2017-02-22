@@ -29,13 +29,14 @@ const createAddTodoUsecase = ({ createValidationService, createTodoService }) =>
   // the use case itself (which is a thunk)
   return (creatorID, name, description) => {
     return async (dispatch, getState) => {
+    debugger;
     const { validateTodo } = createValidationService(dispatch, getState);
     const { createTodo } = createTodoService(dispatch, getState);
 
       let isValid = await validateTodo(description, name, creatorID);
 
       if (isValid) {
-        let promise = await createTodo(description, name, creatorID);
+        await createTodo(description, name, creatorID);
       }
     };
   };
