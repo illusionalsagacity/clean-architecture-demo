@@ -9,7 +9,6 @@ export const ValidationService = {
 
 async function createTodo(description, name, creatorID) {
   //TODO: actually call a REST endpoint.
-  debugger;
   return {
     id: shortid.generate(),
     description,

@@ -72,9 +72,6 @@ export const TodoListContainer = connect(makeTodoListMapStateToProps())(TodoList
 
 export const TodoFormContainer = connect(undefined, (dispatch, ownProps) => {
   return {
-    addTodo: (name, description) => {
-      debugger;
-      return dispatch(addTodoUsecase(ownProps.userID, name, description));
-    },
+    addTodo: (name, description) => dispatch(addTodoUsecase(ownProps.userID, name, description)),
   };
 })(TodoFormComponent);

@@ -45,7 +45,6 @@ export const get = (todoCollection, id) => {
 const getIndicesByCreatorID = (todoCollection, ownerID) => ReverseLookup.get(todoCollection.creatorTable, ownerID).toArray();
 
 export const getIDsByCreatorID = (todoCollection, ownerID) => {
-  debugger;
   let indices = getIndicesByCreatorID(todoCollection, ownerID);
   return indices.map(i => todoCollection.todos.get(i).id);
 };

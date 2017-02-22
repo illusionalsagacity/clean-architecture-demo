@@ -23,9 +23,7 @@ const todoLists = (state=initialState, action) => {
     case ADD:
       return add(state, todoList(undefined, action));
     case UPDATE:
-      debugger;
-      let foo = todoList(get(state, action.payload.id), action);
-      return update(state, action.payload.id, foo);
+      return update(state, action.payload.id, todoList(get(state, action.payload.id), action));
     default:
       return state;
   }

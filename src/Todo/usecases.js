@@ -37,7 +37,6 @@ const createAddTodoUsecase = ({ ValidationService, TodoService }) => {
       if (valid) {
         let payload = await createTodo(description, name, creatorID);
         let { id } = payload;
-        debugger;
         dispatch(todo.add(id, creatorID, name, description));
         dispatch(todoList.update("all", id));
       } else {
