@@ -8,6 +8,8 @@ import store from "./store";
 import Perf from "react-addons-perf";
 import shortid from "shortid";
 
+import "./style.css";
+
 import Todo from "Todo";
 const { actions } = Todo;
 
@@ -20,9 +22,11 @@ store.dispatch(actions.user.add(userID, "Test User"));
 store.dispatch(actions.todoList.add("all", []));
 
 render((<Provider store={store}>
-  <div>
+  <div className="react__root">
     <TodoFormContainer userID={userID} />
-    <TodoListContainer todoListID="all" />
+    <div>
+      <TodoListContainer todoListID="all" />
+    </div>
   </div>
 </Provider>), document.getElementById("react-mount"));
 

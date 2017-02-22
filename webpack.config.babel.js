@@ -35,6 +35,15 @@ module.exports = {
         exclude: [ path.resolve(__dirname, "node_modules") ],
         use: [ "babel-loader" ],
       },
+      {
+        test: /\.css$/,
+        include: [ PATHS.src ],
+        exclude: [ path.resolve(__dirname, "node_modules") ],
+        use: [
+          "style-loader",
+          "css-loader",
+        ],
+      },
     ],
   },
 

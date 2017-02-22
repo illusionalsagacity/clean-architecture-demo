@@ -68,8 +68,18 @@ export class TodoFormComponent extends Component {
 
   render() {
     return (<form className="TodoForm" onSubmit={this.handleSubmit}>
-      <input className="TodoForm__name" type="text" value={this.state.name} onChange={this.handleNameChange} />
-      <input className="TodoForm__description" type="text" value={this.state.description} onChange={this.handleDescriptionChange} />
+      <h3 className="TodoForm__header">Add Todo</h3>
+
+      <div className="TodoForm__input-group">
+        <label className="TodoForm__label" htmlFor="TodoForm__name">Name</label>
+        <input id="TodoForm__name" className="TodoForm__name" type="text" value={this.state.name} onChange={this.handleNameChange} />
+      </div>
+
+      <div className="TodoForm__input-group">
+        <label className="TodoForm__label" htmlFor="TodoForm__description">Description</label>
+        <input id="TodoForm__description" className="TodoForm__description" type="text" value={this.state.description} onChange={this.handleDescriptionChange} />
+      </div>
+
       <input type="submit" value="Add Todo" />
     </form>);
   }

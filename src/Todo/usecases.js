@@ -35,12 +35,11 @@ const createAddTodoUsecase = ({ ValidationService, TodoService }) => {
       let valid = await validateTodo(description, name, creatorID);
 
       if (valid) {
-        let payload = await createTodo(description, name, creatorID);
-        let { id } = payload;
+        let { id } = await createTodo(description, name, creatorID);
         dispatch(todo.add(id, creatorID, name, description));
         dispatch(todoList.update("all", id));
       } else {
-        dispatch(error.add("Todo Validation Failed"));
+        // dispatch(error.add("Todo Validation Failed"));
       }
     };
   };
