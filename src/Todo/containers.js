@@ -8,7 +8,9 @@ const { TodoModel, TodoCollection, TodoListModel, TodoListCollection, UserCollec
 import { todosSelector, todoIDSelector, todoListsSelector, todoListIDSelector, usersSelector, userIDSelector } from "./selectors";
 
 import usecases from "./usecases";
-const { addTodoUsecase } = usecases;
+import * as services from "./services";
+const { createTodoService, createValidationService } = services;
+const { createAddTodoUsecase } = usecases;
 
 
 const makeTodoSelector = () => createSelector(
@@ -71,7 +73,13 @@ export const TodoListContainer = connect(makeTodoListMapStateToProps())(TodoList
 
 
 export const TodoFormContainer = connect(undefined, (dispatch, ownProps) => {
+  const addTodoUsecase = createAddTodoUsecase({
+    TodoService: createTodoService(dispatch),
+    ValidationService: createValidationService(dispatch),
+  });
+
   return {
     addTodo: (name, description) => dispatch(addTodoUsecase(ownProps.userID, name, description)),
+    //                                                      should be state.currentUser when implemented fully
   };
 })(TodoFormComponent);

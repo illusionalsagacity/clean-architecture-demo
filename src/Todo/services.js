@@ -56,7 +56,7 @@ export function createTodoService(dispatch, getState) {
 
   var createTodo = async (description, name, creatorID) => {
 
-    return api.createTodo(description, name, creatorID)
+    return await api.createTodo(description, name, creatorID)
       .catch(console.error)
       .then(data => data.json())
       .then(payload => {

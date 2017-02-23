@@ -18,20 +18,21 @@ const allTodosUsecase = (state) => {
  * function mergeProps(stateProps, dispatchProps, ownProps) {
  *   return Object.assign({}, ownProps, {
  *     ...
- *     addTodo: (name, description) => dispatchProps.addTodo($currentUserID, name, description)
- *   })
+ *     addTodo: (name, description) => dispatchProps.addTodo(stateProps.currentUserID, name, description),
+ *   });
  * }
  */
 
+
 // a use-case interactor
-const createAddTodoUsecase = ({ createValidationService, createTodoService }) => {
+const createAddTodoUsecase = ({ ValidationService, TodoService }) => {
 
   // the use case itself (which is a thunk)
   return (creatorID, name, description) => {
     return async (dispatch, getState) => {
     debugger;
-    const { validateTodo } = createValidationService(dispatch, getState);
-    const { createTodo } = createTodoService(dispatch, getState);
+    const { validateTodo } = ValidationService;
+    const { createTodo } = TodoService;
 
       let isValid = await validateTodo(description, name, creatorID);
 
@@ -43,6 +44,6 @@ const createAddTodoUsecase = ({ createValidationService, createTodoService }) =>
 };
 
 export default {
-  addTodoUsecase: createAddTodoUsecase({ createValidationService, createTodoService }),
+  createAddTodoUsecase,
   allTodosUsecase,
 };

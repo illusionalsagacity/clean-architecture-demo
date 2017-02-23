@@ -38,7 +38,7 @@ let store = createStore(
 //   }
 // }
 
-const getTodos = state => state.todos;
+// const getTodos = state => state.todos;
 
 // let todosBy0 = models.TodoCollection.getIDsByCreatorID(getTodos(store.getState()), userIDs[0]);
 // let todosBy1 = models.TodoCollection.getIDsByCreatorID(getTodos(store.getState()), userIDs[1]);
