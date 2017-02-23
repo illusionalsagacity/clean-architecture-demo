@@ -23,23 +23,22 @@ const allTodosUsecase = (state) => {
  * }
  */
 
+// interactors are given a services object and a fn (usecase thunk) to execute
+
 
 // a use-case interactor
 const createAddTodoUsecase = ({ ValidationService, TodoService }) => {
 
   // the use case itself (which is a thunk)
-  return (creatorID, name, description) => {
-    return async (dispatch, getState) => {
-    debugger;
+  return async (creatorID, name, description) => {
     const { validateTodo } = ValidationService;
     const { createTodo } = TodoService;
 
-      let isValid = await validateTodo(description, name, creatorID);
+    let isValid = await validateTodo(description, name, creatorID);
 
-      if (isValid) {
-        await createTodo(description, name, creatorID);
-      }
-    };
+    if (isValid) {
+      await createTodo(description, name, creatorID);
+    }
   };
 };
 
