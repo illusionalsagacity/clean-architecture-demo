@@ -8,5 +8,6 @@
   "plugins": [
     "react-hot-loader/babel",
     "transform-flow-strip-types"
-  ]
+  ],
+  "retainLines": true
 }

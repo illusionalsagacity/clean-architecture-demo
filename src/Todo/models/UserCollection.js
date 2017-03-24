@@ -9,6 +9,8 @@ const _shape = {
 
 export class UserCollection extends Record(_shape) {}
 
+export const size = (collection: UserCollection): number => collection.users.size;
+
 export const empty = new UserCollection();
 
 export const add = (userCollection, userModel) => userCollection.update("users", users => users.push(userModel));

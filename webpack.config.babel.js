@@ -37,12 +37,42 @@ module.exports = {
         use: [ "babel-loader" ],
       },
       {
+        test: /\.scss$/,
+        include: [
+          PATHS.src,
+          path.resolve(__dirname, "node_modules/font-awesome"),
+        ],
+        // exclude: [ path.resolve(__dirname, "node_modules") ],
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader",
+        ],
+      },
+      {
         test: /\.css$/,
         include: [ PATHS.src ],
         exclude: [ path.resolve(__dirname, "node_modules") ],
         use: [
-          "css-loader",
           "style-loader",
+          "css-loader",
+        ],
+      },
+      {
+        test: [
+          /\.ttf$/,
+          /\.eot$/,
+          /\.woff2?/,
+          /\.svg$/,
+          /\.otf$/,
+        ],
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              name: "fonts/[name].[ext]",
+            },
+          },
         ],
       },
     ],
@@ -72,13 +102,13 @@ module.exports = {
       template: path.resolve(PATHS.src, "template.html"),
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new UglifyJsPlugin({
-      compress: PRODUCTION,
-      beautify: !PRODUCTION,
-      extractCommends: PRODUCTION,
-      // output: { comments: false },
-      sourceMap: true,
-    }),
+    // new UglifyJsPlugin({
+    //   compress: false,
+    //   beautify: false,
+    //   extractCommends: false,
+    //   // output: { comments: false },
+    //   sourceMap: true,
+    // }),
   ],
 
 };

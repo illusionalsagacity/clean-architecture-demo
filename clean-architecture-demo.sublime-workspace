@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"creat",
+				"creatorID"
+			],
+			[
+				"Todo",
+				"TodoListModel"
+			],
+			[
+				"create",
+				"createAddTodoUsecase"
+			],
+			[
+				"makeTodo",
+				"makeTodoMapStateToProps"
+			],
+			[
+				"short",
+				"shortid"
+			],
+			[
+				"makeTo",
+				"makeTodoMapStateToProps"
+			],
+			[
+				"todo",
+				"todoListsReducer"
+			],
+			[
+				"getTodoList",
+				"getTodoListByID"
+			],
+			[
+				"nex",
+				"nextTodoListID"
+			],
+			[
+				"ADD",
+				"ADD_TODO_LIST"
+			],
+			[
 				"getoto",
 				"getTodoByIDSelector〔function〕"
 			],
@@ -26,10 +66,6 @@
 			[
 				"revers",
 				"reverseLookupTable"
-			],
-			[
-				"create",
-				"creationDate"
 			],
 			[
 				"getGrid",
@@ -478,53 +514,50 @@
 			[
 				"attempt",
 				"attempts_remaining"
-			],
-			[
-				"app",
-				"appViewModel"
-			],
-			[
-				"init",
-				"initialized"
-			],
-			[
-				"depen",
-				"dependencyName"
-			],
-			[
-				"htmlB",
-				"htmlWebpackPlugin"
-			],
-			[
-				"dh",
-				"dhtmlxgantt"
-			],
-			[
-				"async",
-				"asyncSetHtmlContent"
-			],
-			[
-				"sideb",
-				"sidebarVisible"
-			],
-			[
-				"hand",
-				"handsontable-bootstrap"
-			],
-			[
-				"html",
-				"html_loader〔variable〕"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "src/Todo/services.js",
+			"settings":
+			{
+				"buffer_size": 1681,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Todo/usecases.js",
+			"settings":
+			{
+				"buffer_size": 1256,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".babelrc",
+			"settings":
+			{
+				"buffer_size": 184,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".flowconfig",
+			"settings":
+			{
+				"buffer_size": 39,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "webpack.config.babel.js",
 			"settings":
 			{
-				"buffer_size": 1445,
-				"encoding": "UTF-8",
+				"buffer_size": 1927,
 				"line_ending": "Unix"
 			}
 		},
@@ -532,64 +565,36 @@
 			"file": "src/index.js",
 			"settings":
 			{
-				"buffer_size": 152,
+				"buffer_size": 1004,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/models/index.js",
+			"file": "src/Todo/components.js",
 			"settings":
 			{
-				"buffer_size": 56,
+				"buffer_size": 2362,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/models/Todo/index.js",
+			"file": "src/Todo/models/TodoCollection.js",
 			"settings":
 			{
-				"buffer_size": 71,
-				"encoding": "UTF-8",
+				"buffer_size": 1767,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "test/entities/TodoEntity.test.js",
+			"contents": "Searching 69 files for \"updateOperation\"\n\n0 matches",
 			"settings":
 			{
-				"buffer_size": 235,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 9 files for \"console\"\n\n/Users/Meyer/Source/clean-architecture-demo/wallaby.js:\n   29      testFramework: \"ava\",\n   30  \n   31:     reportConsoleErrorAsError: true,\n   32  \n   33      env: {\n\n/Users/Meyer/Source/clean-architecture-demo/dist/main.bundle.js:\n  354          return args[argIndex++];\n  355        });\n  356:       if (typeof console !== 'undefined') {\n  357:         console.error(message);\n  358        }\n  359        try {\n  ...\n  632    return ('WebkitAppearance' in document.documentElement.style) ||\n  633      // is firebug? http://stackoverflow.com/a/398120/376773\n  634:     (window.console && (console.firebug || (console.exception && console.table))) ||\n  635      // is firefox >= v31?\n  636:     // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages\n  637      (navigator.userAgent.toLowerCase().match(/firefox\\/(\\d+)/) && parseInt(RegExp.$1, 10) >= 31);\n  638  }\n  ...\n  689  \n  690  /**\n  691:  * Invokes `console.log()` when available.\n  692:  * No-op when `console.log` is not a \"function\".\n  693   *\n  694   * @api public\n  ...\n  697  function log() {\n  698    // this hackery is required for IE8/9, where\n  699:   // the `console.log` function doesn't have 'apply'\n  700:   return 'object' === typeof console\n  701:     && console.log\n  702:     && Function.prototype.apply.call(console.log, console, arguments);\n  703  }\n  704  \n  ...\n 1685        }\n 1686        markerName = 'React update: ' + namedComponent.getName();\n 1687:       console.time(markerName);\n 1688      }\n 1689  \n ....\n 1691  \n 1692      if (markerName) {\n 1693:       console.timeEnd(markerName);\n 1694      }\n 1695  \n ....\n 9156      } else {\n 9157        if (process.env.NODE_ENV !== 'production') {\n 9158:         console.error('Attempted to listen to events during the capture phase on a ' + 'browser that does not support the capture phase. Your application ' + 'will not receive some events.');\n 9159        }\n 9160        return {\n ....\n 10242  \n 10243  var ReactFeatureFlags = {\n 10244:   // When true, call console.time() before and .timeEnd() after each top-level\n 10245    // render (both initial renders and updates). Useful when looking at prod-mode\n 10246    // timeline profiles in Chrome, for example.\n .....\n 10558      var type = wrappedElement.type;\n 10559      markerName = 'React mount: ' + (typeof type === 'string' ? type : type.displayName || type.name);\n 10560:     console.time(markerName);\n 10561    }\n 10562  \n .....\n 10565  \n 10566    if (markerName) {\n 10567:     console.timeEnd(markerName);\n 10568    }\n 10569  \n .....\n 12825  function log(level, msg) {\n 12826  \tif(logLevel === \"info\" && level === \"info\")\n 12827: \t\treturn console.log(msg);\n 12828  \tif([\"info\", \"warning\"].indexOf(logLevel) >= 0 && level === \"warning\")\n 12829: \t\treturn console.warn(msg);\n 12830  \tif([\"info\", \"warning\", \"error\"].indexOf(logLevel) >= 0 && level === \"error\")\n 12831: \t\treturn console.error(msg);\n 12832  }\n 12833  \n .....\n 12883  \t\tsendMsg(\"Warnings\", strippedWarnings);\n 12884  \t\tfor(var i = 0; i < strippedWarnings.length; i++)\n 12885: \t\t\tconsole.warn(strippedWarnings[i]);\n 12886  \t\tif(initial) return initial = false;\n 12887  \t\treloadApp();\n .....\n 12894  \t\tsendMsg(\"Errors\", strippedErrors);\n 12895  \t\tfor(var i = 0; i < strippedErrors.length; i++)\n 12896: \t\t\tconsole.error(strippedErrors[i]);\n 12897  \t\tif(useOverlay) overlay.showErrors(errors);\n 12898  \t},\n .....\n 12969  \t\tmodule.hot.check(true).then(function(updatedModules) {\n 12970  \t\t\tif(!updatedModules) {\n 12971: \t\t\t\tconsole.warn(\"[HMR] Cannot find update. Need to do a full reload!\");\n 12972: \t\t\t\tconsole.warn(\"[HMR] (Probably because of restarting the webpack-dev-server)\");\n 12973  \t\t\t\twindow.location.reload();\n 12974  \t\t\t\treturn;\n .....\n 12982  \n 12983  \t\t\tif(upToDate()) {\n 12984: \t\t\t\tconsole.log(\"[HMR] App is up to date.\");\n 12985  \t\t\t}\n 12986  \n .....\n 12988  \t\t\tvar status = module.hot.status();\n 12989  \t\t\tif([\"abort\", \"fail\"].indexOf(status) >= 0) {\n 12990: \t\t\t\tconsole.warn(\"[HMR] Cannot apply update. Need to do a full reload!\");\n 12991: \t\t\t\tconsole.warn(\"[HMR] \" + err.stack || err.message);\n 12992  \t\t\t\twindow.location.reload();\n 12993  \t\t\t} else {\n 12994: \t\t\t\tconsole.warn(\"[HMR] Update failed: \" + err.stack || err.message);\n 12995  \t\t\t}\n 12996  \t\t});\n .....\n 13000  \t\tlastHash = currentHash;\n 13001  \t\tif(!upToDate() && module.hot.status() === \"idle\") {\n 13002: \t\t\tconsole.log(\"[HMR] Checking for updates on the server...\");\n 13003  \t\t\tcheck();\n 13004  \t\t}\n 13005  \t});\n 13006: \tconsole.log(\"[HMR] Waiting for update signal from WDS...\");\n 13007  } else {\n 13008  \tthrow new Error(\"[HMR] Hot Module Replacement is disabled.\");\n .....\n 13323        args = exports.formatArgs.apply(self, args);\n 13324      }\n 13325:     var logFn = enabled.log || exports.log || console.log.bind(console);\n 13326      logFn.apply(self, args);\n 13327    }\n .....\n 13679      if (m && m > 0 && this._events[type].length > m) {\n 13680        this._events[type].warned = true;\n 13681:       console.error('(node) warning: possible EventEmitter memory ' +\n 13682                      'leak detected. %d listeners added. ' +\n 13683                      'Use emitter.setMaxListeners() to increase limit.',\n 13684                      this._events[type].length);\n 13685:       if (typeof console.trace === 'function') {\n 13686          // not supported in IE 10\n 13687:         console.trace();\n 13688        }\n 13689      }\n .....\n 18446          // Firefox does not have the issue with devtools loaded over file://\n 18447          var showFileUrlMessage = window.location.protocol.indexOf('http') === -1 && navigator.userAgent.indexOf('Firefox') === -1;\n 18448:         console.debug('Download the React DevTools ' + (showFileUrlMessage ? 'and use an HTTP server (instead of a file: URL) ' : '') + 'for a better development experience: ' + 'https://fb.me/react-devtools');\n 18449        }\n 18450      }\n .....\n 26522      propFullName = propFullName || propName;\n 26523      if (process.env.NODE_ENV !== 'production') {\n 26524:       if (secret !== ReactPropTypesSecret && typeof console !== 'undefined') {\n 26525          var cacheKey = componentName + ':' + propName;\n 26526          if (!manualPropTypeCallCache[cacheKey]) {\n .....\n 29535  \n 29536    try {\n 29537:     levelExists = global.console && global.console[level] && global.console[level].apply;\n 29538    } catch(e) {\n 29539      // do nothing\n .....\n 29541  \n 29542    logObject[level] = levelExists ? function () {\n 29543:     return global.console[level].apply(global.console, arguments);\n 29544    } : (level === 'log' ? function () {} : logObject.log);\n 29545  });\n\n/Users/Meyer/Source/clean-architecture-demo/test/entities/TodoEntity.test.js:\n    2  import models from \"models\";\n    3  \n    4: console.log(models);\n    5  \n    6  // const { Todo } = models.Todo;\n    7  \n    8: // console.log(Todo);\n    9  \n   10  \n\n48 matches across 3 files\n",
-			"settings":
-			{
-				"buffer_size": 6922,
+				"buffer_size": 51,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
-			}
-		},
-		{
-			"file": "wallaby.js",
-			"settings":
-			{
-				"buffer_size": 682,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/models/Todo/TodoModel.js",
-			"settings":
-			{
-				"buffer_size": 105,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -609,16 +614,64 @@
 				"Wallaby.js: Start"
 			],
 			[
-				"rename",
-				"File: Rename"
+				"color",
+				"Colorsublime: Browse Themes"
 			],
 			[
-				"wal",
+				"flow",
+				"Flow"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"waa",
+				"Wallaby.js: Stop"
+			],
+			[
+				"run ",
+				"Wallaby.js: Run file tests"
+			],
+			[
+				"walla",
 				"Wallaby.js: Start"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"toggl",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"to",
+				"SublimeLinter: Toggle Linter"
 			],
 			[
 				"toggle",
 				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"gitgtter",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"wal",
+				"Wallaby.js: Start"
 			],
 			[
 				"tog",
@@ -627,10 +680,6 @@
 			[
 				"sublime linter debu",
 				"SublimeLinter: Enable Debug Mode"
-			],
-			[
-				"toggl",
-				"SublimeLinter: Toggle Linter"
 			],
 			[
 				"togglel",
@@ -645,16 +694,8 @@
 				"File: Rename"
 			],
 			[
-				"flow",
-				"Flow"
-			],
-			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"lint",
@@ -697,10 +738,6 @@
 				"Set Syntax: JavaScript Next"
 			],
 			[
-				"move",
-				"File: Move"
-			],
-			[
 				"check",
 				"git: checkout current file"
 			],
@@ -719,10 +756,6 @@
 			[
 				"diff",
 				"git: diff"
-			],
-			[
-				"delete",
-				"File: Delete"
 			],
 			[
 				"d",
@@ -757,10 +790,6 @@
 				"Wallaby.js: Run file tests"
 			],
 			[
-				"dele",
-				"File: Delete"
-			],
-			[
 				"inline",
 				"git: diff current file inline"
 			],
@@ -783,10 +812,6 @@
 			[
 				"",
 				"Colorsublime: Install Theme"
-			],
-			[
-				"walla",
-				"Wallaby.js: Start"
 			],
 			[
 				"upd",
@@ -913,7 +938,7 @@
 	},
 	"console":
 	{
-		"height": 309.0,
+		"height": 233.0,
 		"history":
 		[
 			"sublime.platform()",
@@ -932,30 +957,75 @@
 	"expanded_folders":
 	[
 		"/Users/Meyer/Source/clean-architecture-demo",
-		"/Users/Meyer/Source/clean-architecture-demo/dist",
-		"/Users/Meyer/Source/clean-architecture-demo/src",
-		"/Users/Meyer/Source/clean-architecture-demo/src/models",
-		"/Users/Meyer/Source/clean-architecture-demo/src/models/Todo",
-		"/Users/Meyer/Source/clean-architecture-demo/test",
-		"/Users/Meyer/Source/clean-architecture-demo/test/entities"
+		"/Users/Meyer/Source/clean-architecture-demo/src"
 	],
 	"file_history":
 	[
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/containers.js",
+		"/Users/Meyer/Source/clean-architecture-demo/clean-architecture-demo.sublime-project",
+		"/Users/Meyer/Source/clean-architecture-demo/.babelrc",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/models/TodoModel.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/template.html",
+		"/Users/Meyer/Source/clean-architecture-demo/.git/addp-hunk-edit.diff",
+		"/Users/Meyer/Source/clean-architecture-demo/webpack.config.babel.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/style.css",
+		"/Users/Meyer/Source/clean-architecture-demo/src/store.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/models/TodoCollection.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/index.js",
+		"/Users/Meyer/Source/clean-architecture-demo/test/Todo/reducers.test.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/actions/index.js",
+		"/Users/Meyer/Source/clean-architecture-demo/test/Todo/services.test.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/models/TodoListModel.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/reducers/todoListsReducer.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/models/TodoListCollection.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/actions/todoListActions.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/services.js",
+		"/Users/Meyer/Source/clean-architecture-demo/.git/COMMIT_EDITMSG",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/actions/todoActions.js",
+		"/Users/Meyer/Source/clean-architecture-demo/wallaby.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/reducers/todosReducer.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/ReverseLookup.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/selectors.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/index.js",
+		"/Users/Meyer/Source/clean-architecture-demo/test/ReverseLookup.test.js",
+		"/Users/Meyer/.zsh/exports.zsh",
+		"/Users/Meyer/Source/clean-architecture-demo/test/Todo/actions.test.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/reducers/usersReducer.js",
+		"/Users/Meyer/Source/clean-architecture-demo/.flowconfig",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/reducers/index.js",
+		"/Users/Meyer/Source/shibumi/.git/addp-hunk-edit.diff",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/models/UserModel.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/actions/userActions.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/models/index.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/models/UserCollection.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/reducers.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/models.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/Todo/actions.js",
+		"/Users/Meyer/Source/clean-architecture-demo/.yarnclean",
+		"/Users/Meyer/Source/clean-architecture-demo/.git/rebase-merge/git-rebase-todo",
+		"/Users/Meyer/Source/clean-architecture-demo/yarn.lock",
+		"/Users/Meyer/Source/clean-architecture-demo/package.json",
+		"/Users/Meyer/Source/clean-architecture-demo/src/immutable-perf.js",
+		"/Users/Meyer/Source/clean-architecture-demo/.eslintrc",
+		"/Users/Meyer/Source/clean-architecture-demo/src/controllers/TodoController.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/components/TodoComponent.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/models/Todo/TodoModel.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/controllers/TodoListController.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/models/Todo/TodoCollection.js",
+		"/Users/Meyer/Source/clean-architecture-demo/test/models/Todo/TodoModel.test.js",
+		"/Users/Meyer/Source/clean-architecture-demo/test/models/Todo/TodoCollection.test.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/usecases/AllTodosUsecase.js",
+		"/Users/Meyer/Source/clean-architecture-demo/src/services/TodoService.js",
 		"/Users/Meyer/Source/clean-architecture-demo/src/models/Todo/index.js",
 		"/Users/Meyer/Source/clean-architecture-demo/src/models/index.js",
 		"/Users/Meyer/Source/clean-architecture-demo/src/entities/Todo/index.js",
 		"/Users/Meyer/Source/clean-architecture-demo/src/entities/index.js",
 		"/Users/Meyer/Source/clean-architecture-demo/test/example.test.js",
-		"/Users/Meyer/Source/clean-architecture-demo/.eslintrc",
 		"/Users/Meyer/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/Users/Meyer/Source/clean-architecture-demo/wallaby.js",
 		"/Users/Meyer/Source/clean-architecture-demo/.eslintrc.json",
-		"/Users/Meyer/Source/clean-architecture-demo/package.json",
-		"/Users/Meyer/Source/clean-architecture-demo/.babelrc",
 		"/Users/Meyer/Source/clean-architecture-demo/README.md",
 		"/Users/Meyer/Source/clean-architecture-demo/src/main.js",
 		"/Users/Meyer/Source/clean-architecture-demo/webpack.config.js",
-		"/Users/Meyer/Source/clean-architecture-demo/src/template.html",
 		"/Users/Meyer/Source/shibumi/.git/COMMIT_EDITMSG",
 		"/Users/Meyer/Source/shibumi/.git/rebase-merge/git-rebase-todo",
 		"/Users/Meyer/Source/todo/source/entities/todoCollectionEntity.js",
@@ -988,7 +1058,6 @@
 		"/Users/Meyer/Source/shibumi/src/main/webapp/views/tiles/managedLayout.js",
 		"/Users/Meyer/Source/shibumi/src/main/webapp/views/objectHeader.js",
 		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/knockout.mapper.js",
-		"/Users/Meyer/Source/shibumi/.git/addp-hunk-edit.diff",
 		"/Users/Meyer/Source/shibumi/database/ga-69/ga-69_schema_conversion.sql",
 		"/Users/Meyer/Source/shibumi/.blaze/blaze.java",
 		"/Users/Meyer/Source/shibumi/database/ga-68/ga-68_schema_conversion.sql",
@@ -1019,60 +1088,11 @@
 		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/toggles.js",
 		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/template.js",
 		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/tabs.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/tableRows.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/showMore.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/scripts.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/richTextEditing.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/navigation.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/messaging.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/actions.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/listOptions.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/jExtensions.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/inView.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/infiniteScroll.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/helpers.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/errorHandler.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi-bootstrap.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/help.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/frontEndFtw.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/formInit.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/filters2.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/filters.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/bindings/filters.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/enterprise.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/enhanceUI.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/viewModels/application.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/comments.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/dialogs/addAttachment.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/requirejs-include.tag",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/tinysort.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/knockout.command.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/knockout-bootstrap.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/array.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/document.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/copy-item.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/childReportList.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/attachments.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/admin.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/pages/PageFactory.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/stripped-top.tag",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/table/RowFactory.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/shell.tag",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/libs/js/require.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/views/summaryTabs.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/views/tabbedView.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/views/components/dropdownMessages.js",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/main-bottom.tag",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/WEB-INF/tags/main-top.tag",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/js/highchartsFactory.js",
-		"/Users/Meyer/Desktop/notes.md",
-		"/Users/Meyer/Source/shibumi/src/main/webapp/views/constituentActualValue.js",
-		"/Users/Meyer/Source/shibumi/Shibumi-Presentation.sublime-project"
+		"/Users/Meyer/Source/shibumi/src/main/webapp/js/shibumi/tableRows.js"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -1214,6 +1234,36 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"updateOperation",
+			"todoCollection",
+			"debugger",
+			"ValidationService",
+			"debugger",
+			".get",
+			"ADD",
+			"toArray",
+			".first",
+			".add",
+			".first()",
+			"getIndicesByCreatorID",
+			"debugger",
+			"getIndicesByCreatorID",
+			"indexTable",
+			"ownerTable",
+			"getUsers",
+			"getTodoLists",
+			"getTodos",
+			"todo",
+			"todos",
+			"todoCollection",
+			"compare",
+			"state",
+			"index",
+			"List",
+			"addEntry",
+			"lookups",
+			"DELETE",
+			"Todo",
 			"console",
 			"TodoEntity",
 			"entities",
@@ -1311,37 +1361,7 @@
 			"buildChartSeries",
 			"buildchartSeries",
 			"effe",
-			"color",
-			"buildColor(",
-			"bucketColors",
-			"buildColor",
-			"color",
-			"tabularChart",
-			"chartsettings",
-			"effectiveChartColors",
-			"initializeChart",
-			"highchartsFactory",
-			"timeframe",
-			"initializeChart",
-			"buildColor",
-			"bucketcolors",
-			"gethigh",
-			"chartOptions",
-			"getViewModel",
-			"chartoptions",
-			"chartOptions(",
-			"chartOptions",
-			"promise",
-			"chart",
-			"getchartcolors",
-			"buildConstructorOptions",
-			"aggrega",
-			"//",
-			"columnToolbarOptions",
-			".columnToolbar(",
-			".columnToolbar({",
-			"ColumnToolbar({",
-			"aggregationColumnArchetype"
+			"color"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1463,24 +1483,24 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "webpack.config.babel.js",
+					"file": "src/Todo/services.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1445,
+						"buffer_size": 1681,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								229,
-								229
+								822,
+								822
 							]
 						],
 						"settings":
@@ -1488,55 +1508,8 @@
 							"apply_syntax_touched": true,
 							"at_wb_tests_view": false,
 							"auto_complete": false,
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								225,
-								2,
-								7,
-								16,
-								41,
-								29,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
 							"color_helper.box_height": 15,
-							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/Neutron (SL).tmTheme",
 							"color_helper.file_palette":
 							[
 							],
@@ -1548,34 +1521,34 @@
 								"current_ext": ".js",
 								"current_syntax": "JSX/JSX",
 								"enabled": false,
-								"last_updated": 1486509202.26
+								"last_updated": 1490278911.19
 							},
-							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/webpack.config.babel.js",
-							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
-							"syntax": "Packages/JSX/JSX.tmLanguage"
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 67.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/index.js",
+					"file": "src/Todo/usecases.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 152,
+						"buffer_size": 1256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								152
+								617,
+								617
 							]
 						],
 						"settings":
@@ -1583,261 +1556,108 @@
 							"apply_syntax_touched": true,
 							"at_wb_tests_view": false,
 							"auto_complete": false,
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								225,
-								2,
-								7,
-								16,
-								59,
-								25,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
 							"color_helper.box_height": 15,
 							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
 							"color_helper.file_palette":
 							[
 							],
-							"color_helper.preview_meta":
-							{
-							},
 							"color_helper.scan":
 							{
 								"current_ext": ".js",
 								"current_syntax": "JSX/JSX",
 								"enabled": false,
-								"last_updated": 1486509202.26
+								"last_updated": 1488466601.38
 							},
-							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/src/main.js",
-							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
-							"syntax": "Packages/JSX/JSX.tmLanguage"
+							"open_with_edit": true,
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 24.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src/models/index.js",
+					"file": ".babelrc",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 56,
+						"buffer_size": 184,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								56
+								184,
+								184
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
 							"at_wb_tests_view": false,
-							"auto_complete": false,
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								225,
-								2,
-								8,
-								13,
-								7,
-								1,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
 							"color_helper.box_height": 15,
 							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
 							"color_helper.file_palette":
 							[
 							],
-							"color_helper.preview_meta":
-							{
-							},
 							"color_helper.scan":
 							{
-								"current_ext": ".js",
-								"current_syntax": "JSX/JSX",
+								"current_ext": "",
+								"current_syntax": "Text/Plain text",
 								"enabled": false,
-								"last_updated": 1486509202.26
+								"last_updated": 1488466601.38
 							},
-							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/src/models/index.js",
-							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
-							"syntax": "Packages/JSX/JSX.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "src/models/Todo/index.js",
-					"semi_transient": false,
+					"file": ".flowconfig",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 71,
+						"buffer_size": 39,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								71,
-								71
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
 							"at_wb_tests_view": false,
-							"auto_complete": false,
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								225,
-								2,
-								8,
-								13,
-								7,
-								34,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
 							"color_helper.box_height": 15,
 							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
 							"color_helper.file_palette":
 							[
 							],
-							"color_helper.preview_meta":
-							{
-							},
 							"color_helper.scan":
 							{
-								"current_ext": ".js",
-								"current_syntax": "JSX/JSX",
+								"current_ext": "",
+								"current_syntax": "Text/Plain text",
 								"enabled": false,
-								"last_updated": 1486509202.26
+								"last_updated": 1488466601.38
 							},
-							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/src/models/Todo/index.js",
-							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
-							"syntax": "Packages/JSX/JSX.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1848,19 +1668,107 @@
 				},
 				{
 					"buffer": 4,
-					"file": "test/entities/TodoEntity.test.js",
+					"file": "webpack.config.babel.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 235,
+						"buffer_size": 1927,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								145,
-								145
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1488466601.38
+							},
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/CarbonightBlue (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1487341180.94
+							},
+							"syntax": "Packages/JSX/JSX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 202.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/Todo/components.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1354,
+								1354
 							]
 						],
 						"settings":
@@ -1898,10 +1806,10 @@
 								7,
 								225,
 								2,
-								7,
-								23,
-								11,
-								1,
+								14,
+								9,
+								5,
+								16,
 								0,
 								0,
 								0,
@@ -1920,242 +1828,87 @@
 							"color_helper.file_palette":
 							[
 							],
-							"color_helper.preview_meta":
-							{
-							},
 							"color_helper.scan":
 							{
 								"current_ext": ".js",
 								"current_syntax": "JSX/JSX",
 								"enabled": false,
-								"last_updated": 1486509202.26
+								"last_updated": 1488466601.38
 							},
-							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/test/entities/TodoEntity.test.js",
+							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/src/Todo/components.js",
 							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
+							"history_list_is_closing": true,
 							"open_with_edit": true,
-							"syntax": "Packages/JSX/JSX.tmLanguage"
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 609.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/Todo/models/TodoCollection.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"color_helper.box_height": 15,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/MonokaiEasyForRetina (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JSX/JSX",
+								"enabled": false,
+								"last_updated": 1488466601.38
+							},
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 8,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6922,
+						"buffer_size": 51,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										147,
-										154
-									],
-									[
-										347,
-										354
-									],
-									[
-										389,
-										396
-									],
-									[
-										613,
-										620
-									],
-									[
-										625,
-										632
-									],
-									[
-										645,
-										652
-									],
-									[
-										666,
-										673
-									],
-									[
-										784,
-										791
-									],
-									[
-										967,
-										974
-									],
-									[
-										1020,
-										1027
-									],
-									[
-										1187,
-										1194
-									],
-									[
-										1266,
-										1273
-									],
-									[
-										1288,
-										1295
-									],
-									[
-										1344,
-										1351
-									],
-									[
-										1357,
-										1364
-									],
-									[
-										1500,
-										1507
-									],
-									[
-										1603,
-										1610
-									],
-									[
-										1752,
-										1759
-									],
-									[
-										2051,
-										2058
-									],
-									[
-										2426,
-										2433
-									],
-									[
-										2529,
-										2536
-									],
-									[
-										2691,
-										2698
-									],
-									[
-										2805,
-										2812
-									],
-									[
-										2927,
-										2934
-									],
-									[
-										3092,
-										3099
-									],
-									[
-										3316,
-										3323
-									],
-									[
-										3532,
-										3539
-									],
-									[
-										3613,
-										3620
-									],
-									[
-										3806,
-										3813
-									],
-									[
-										3989,
-										3996
-									],
-									[
-										4071,
-										4078
-									],
-									[
-										4192,
-										4199
-									],
-									[
-										4399,
-										4406
-									],
-									[
-										4513,
-										4520
-									],
-									[
-										4795,
-										4802
-									],
-									[
-										4812,
-										4819
-									],
-									[
-										5003,
-										5010
-									],
-									[
-										5296,
-										5303
-									],
-									[
-										5386,
-										5393
-									],
-									[
-										5680,
-										5687
-									],
-									[
-										6090,
-										6097
-									],
-									[
-										6303,
-										6310
-									],
-									[
-										6321,
-										6328
-									],
-									[
-										6346,
-										6353
-									],
-									[
-										6516,
-										6523
-									],
-									[
-										6544,
-										6551
-									],
-									[
-										6773,
-										6780
-									],
-									[
-										6860,
-										6867
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
 							[
-								200,
-								200
+								51,
+								51
 							]
 						],
 						"settings":
@@ -2167,19 +1920,15 @@
 							"color_helper.file_palette":
 							[
 							],
-							"color_helper.preview_meta":
-							{
-							},
 							"color_helper.scan":
 							{
 								"current_ext": null,
 								"current_syntax": "Default/Find Results",
 								"enabled": false,
-								"last_updated": 1486509202.26
+								"last_updated": 1488466601.38
 							},
 							"default_dir": "/Users/Meyer/Source/clean-architecture-demo",
 							"detect_indentation": false,
-							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
 							"line_numbers": false,
 							"output_tag": 1,
 							"result_base_dir": "",
@@ -2193,200 +1942,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "wallaby.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 682,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								347,
-								347
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"at_wb_tests_view": false,
-							"auto_complete": false,
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								225,
-								2,
-								7,
-								17,
-								35,
-								11,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
-							"color_helper.box_height": 15,
-							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": ".js",
-								"current_syntax": "JSX/JSX",
-								"enabled": false,
-								"last_updated": 1486509202.26
-							},
-							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/wallaby.js",
-							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 62.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/models/Todo/TodoModel.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 105,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								78,
-								78
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"at_wb_tests_view": false,
-							"auto_complete": false,
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								225,
-								2,
-								8,
-								13,
-								3,
-								56,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
-							"color_helper.box_height": 15,
-							"color_helper.color_scheme": "Packages/Color Scheme - Wallaby/MonokaiEasyForRetina (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": ".js",
-								"current_syntax": "JSX/JSX",
-								"enabled": false,
-								"last_updated": 1486509202.26
-							},
-							"git_savvy.file_path": "/Users/Meyer/Source/clean-architecture-demo/src/entities/Todo/TodoEntity.js",
-							"git_savvy.repo_path": "/Users/Meyer/Source/clean-architecture-demo",
-							"open_with_edit": true,
-							"syntax": "Packages/JSX/JSX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -2437,7 +1993,7 @@
 	},
 	"output.wallabyjs":
 	{
-		"height": 256.0
+		"height": 187.0
 	},
 	"output.wallabyjs_console":
 	{
@@ -2457,19 +2013,123 @@
 		"selected_items":
 		[
 			[
+				"sublime",
+				"clean-architecture-demo.sublime-project"
+			],
+			[
+				"babelrc",
+				".babelrc"
+			],
+			[
+				"babel",
+				".babelrc"
+			],
+			[
+				"webpack",
+				"webpack.config.babel.js"
+			],
+			[
+				"template",
+				"src/template.html"
+			],
+			[
+				"services",
+				"src/Todo/services.js"
+			],
+			[
+				"todocon",
+				"src/Todo/models/TodoCollection.js"
+			],
+			[
+				"containers",
+				"src/Todo/containers.js"
+			],
+			[
+				"models/",
+				"src/Todo/models/TodoCollection.js"
+			],
+			[
+				"service",
+				"src/Todo/services.js"
+			],
+			[
+				"servi",
+				"src/Todo/services.js"
+			],
+			[
+				"todolistco",
+				"src/Todo/models/TodoListCollection.js"
+			],
+			[
+				"todolist",
+				"src/Todo/models/TodoListModel.js"
+			],
+			[
+				"actions",
+				"src/Todo/actions/todoListActions.js"
+			],
+			[
+				"todolistre",
+				"src/Todo/reducers/todoListsReducer.js"
+			],
+			[
+				"actions.",
+				"src/Todo/actions/todoListActions.js"
+			],
+			[
+				"todolists",
+				"src/Todo/reducers/todoListsReducer.js"
+			],
+			[
+				"reducers",
+				"src/Todo/reducers/todoListsReducer.js"
+			],
+			[
+				"actions/",
+				"src/Todo/actions/todoListActions.js"
+			],
+			[
+				"todolistac",
+				"src/Todo/actions/todoListActions.js"
+			],
+			[
+				"store",
+				"src/store.js"
+			],
+			[
+				"todoactions",
+				"src/Todo/actions/todoActions.js"
+			],
+			[
+				"wall",
+				"wallaby.js"
+			],
+			[
+				"todosre",
+				"src/Todo/reducers/todosReducer.js"
+			],
+			[
+				"todomodel",
+				"src/Todo/models/TodoModel.js"
+			],
+			[
+				"yarn",
+				"yarn.lock"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"eslint",
+				".eslintrc"
+			],
+			[
 				"action",
 				"source/actions.js"
 			],
 			[
-				"template",
-				"source/template.html"
-			],
-			[
 				"packa",
-				"package.json"
-			],
-			[
-				"pack",
 				"package.json"
 			],
 			[
@@ -2863,110 +2523,6 @@
 			[
 				"highchartsfact",
 				"src/main/webapp/js/highchartsFactory.js"
-			],
-			[
-				"custombranding",
-				"src/main/webapp/views/admin/customBranding.js"
-			],
-			[
-				"columnutils.test",
-				"src/main/webapp/test/js/table/columnUtils.test.js"
-			],
-			[
-				"columnu",
-				"src/main/webapp/js/table/columnUtils.js"
-			],
-			[
-				"wallab",
-				"src/main/webapp/stormtrooper/wallaby.js"
-			],
-			[
-				"label.test.js",
-				"src/main/webapp/stormtrooper/src/core/Label/Label.test.js"
-			],
-			[
-				"chartcol",
-				"src/main/webapp/utilities/chartColors.js"
-			],
-			[
-				"timeframechartut",
-				"src/main/webapp/views/components/timeframeChart.utils.js"
-			],
-			[
-				"timechart",
-				"src/main/webapp/views/components/timeframeChart.js"
-			],
-			[
-				"database/ga-69",
-				"database/ga-69/ga-69_schema_conversion.sql"
-			],
-			[
-				"navbar.js",
-				"src/main/webapp/views/navbar.js"
-			],
-			[
-				"rest.js",
-				"src/main/webapp/js/services/rest.js"
-			],
-			[
-				"enterpriseservie",
-				"src/main/java/com/shibumi/platform/services/EnterpriseServiceImpl.java"
-			],
-			[
-				"enterpriseserviceim",
-				"src/main/java/com/shibumi/platform/services/EnterpriseServiceImpl.java"
-			],
-			[
-				"enterpriseser",
-				"src/main/java/com/shibumi/platform/services/EnterpriseService.java"
-			],
-			[
-				"customimage",
-				"src/main/webapp/views/customImageTileCreateForm.html"
-			],
-			[
-				"upload",
-				"src/main/webapp/views/uploadPhoto.css"
-			],
-			[
-				"uploadph",
-				"src/main/webapp/views/uploadPhoto.html"
-			],
-			[
-				"custombranding.css",
-				"src/main/webapp/views/admin/customBranding.css"
-			],
-			[
-				"branding",
-				"src/main/webapp/views/admin/customBranding.js"
-			],
-			[
-				"admintabbed",
-				"src/main/webapp/views/admin/adminTabbedView.utils.js"
-			],
-			[
-				"dynami",
-				"src/main/webapp/views/dynamicFilters.html"
-			],
-			[
-				"dyn",
-				"src/main/webapp/views/dynamicFilters.js"
-			],
-			[
-				"refac",
-				"src/main/webapp/css/refactor.css"
-			],
-			[
-				"key.js",
-				"src/main/webapp/stormtrooper/src/core/Utility/Key.js"
-			],
-			[
-				"chartcolorlist.css",
-				"src/main/webapp/views/admin/chartColorList.css"
-			],
-			[
-				"components.js",
-				"src/main/webapp/stormtrooper/src/core/PickList/components.js"
 			]
 		],
 		"width": 0.0
@@ -3001,7 +2557,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 329.0,
+	"side_bar_width": 306.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

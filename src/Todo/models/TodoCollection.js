@@ -14,10 +14,10 @@ const _shape = {
 export class TodoCollection extends Record(_shape) {}
 
 export const empty = new TodoCollection();
-export const all = (todoCollection) => todoCollection.todos;
+export const all = (collection: TodoCollection): List => collection.todos;
 
-export const add = (todoCollection, todoModel) => {
-  return todoCollection.withMutations(state => {
+export const add = (collection: TodoCollection, todoModel) => {
+  return collection.withMutations(state => {
     let i = state.todos.size;
     return state
       .update("todos", todos => todos.push(todoModel))

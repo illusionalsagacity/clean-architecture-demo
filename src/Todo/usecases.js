@@ -27,6 +27,7 @@ const allTodosUsecase = (state) => {
 
 
 // a use-case interactor
+// the services need to have a type interface
 const createAddTodoUsecase = ({ ValidationService, TodoService }) => {
 
   // the use case itself (which is a thunk)

@@ -9,18 +9,14 @@ const { empty, add, remove } = models.TodoCollection;
 const { create } = models.TodoModel;
 
 
-// test(t => {
-//   t.truthy(todo);
-// });
-
-test(t => {
+test("todos", t => {
   t.truthy(todos);
   let expected = empty;
   let state = todos(undefined, {});
   t.truthy(is(expected, state), "todos handles initial state");
 });
 
-test(t => {
+test("addTodo", t => {
   let state = empty;
   let addTodoAction = actions.todo.add(0, "test name", "test description");
   state = todos(state, addTodoAction);

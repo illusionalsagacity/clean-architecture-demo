@@ -1,11 +1,11 @@
 import * as todo from "./todoActions";
 import * as todoList from "./todoListActions";
-import * as user from "./userActions";
+import * as users from "./userActions";
 
 const actions = {
   todo,
   todoList,
-  user,
+  users,
 };
 
 export default actions;

@@ -13,11 +13,10 @@ const _shape = {
 export class TodoListCollection extends Record(_shape) {}
 
 export const empty = new TodoListCollection();
-//TODO: add special todolists like .all ?
 
 export const add = (todoListCollection, todoList) => {
   return todoListCollection.withMutations(state => {
-    let i = state.todoLists.size || 0;
+    let i = state.todoLists.size;
     return state
       .update("todoLists", todoLists => todoLists.push(todoList))
       .update("indexTable", indexTable => ReverseLookup.add(indexTable, todoList.id, i));
@@ -59,3 +58,5 @@ export const get = (todoListCollection, id) => {
 
   return [];
 };
+
+export const size = (collection: TodoListCollection): number => collection.todoLists.size;

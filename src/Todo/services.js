@@ -33,8 +33,6 @@ const api = {
 export function createValidationService(dispatch, getState) {
 
   var validateTodo = async (description, name, creatorID) => {
-    debugger;
-
     const validation = await api.validateTodo(description, name, creatorID)
       .catch(console.error)
       .then(data => data.json());

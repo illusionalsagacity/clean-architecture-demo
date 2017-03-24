@@ -1,5 +1,5 @@
 export const todosSelector = state => state.todos;
-export const todoIDSelector = (state, props) => props.todoID;
+export const propTodoIDSelector = (state, props) => props.todoID;
 
 export const todoListsSelector = state => state.todoLists;
 export const todoListIDSelector = (state, props) => props.todoListID;

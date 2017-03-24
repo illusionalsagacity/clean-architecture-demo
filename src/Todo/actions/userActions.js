@@ -1,18 +1,31 @@
+//@flow
+
 "use strict";
 
-export const ADD = "@user/ADD";
-export const REMOVE = "@user/REMOVE";
+export const ADD: string = "@user/ADD";
+export const REMOVE: string = "@user/REMOVE";
 
-export const add = (id, name) => {
-  return {
-    type: ADD,
-    payload: { id, name },
-  };
+type t_addAction = {
+  type: string,
+  payload: {
+    id: string,
+    name: string,
+  },
 };
 
-export const remove = (id) => {
-  return {
-    type: REMOVE,
-    payload: { id },
-  };
+type t_removeAction = {
+  type: string,
+  payload: {
+    id: string,
+  },
 };
+
+export const add = (id: string, name: string): t_addAction => ({
+  type: ADD,
+  payload: { id, name },
+});
+
+export const remove = (id: string): t_removeAction => ({
+  type: REMOVE,
+  payload: { id },
+});

@@ -30,7 +30,7 @@ let store = createStore(
 // for (let i = 0; i < 5; i++) {
 //   userIDs[i] = shortid.generate();
 
-//   store.dispatch(actions.user.add(userIDs[i], `user ${userIDs[i]}`));
+//   store.dispatch(actions.users.add(userIDs[i], `user ${userIDs[i]}`));
 
 //   for (let j = 0; j < 10; j++) {
 //     let todoID = shortid.generate();
