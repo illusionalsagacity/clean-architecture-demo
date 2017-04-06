@@ -5,7 +5,7 @@ import Perf from "react-addons-perf";
 import shortid from "shortid";
 const { reducers, actions, models, services, usecases } = Todo;
 const { createValidationService, createTodoService } = services;
-const { AddTodoUsecase, createInteractor } = usecases;
+const { AddTodoUsecase, createInitializeServices, createInteractor } = usecases;
 
 //use const for PROD
 let store = createStore(
@@ -18,12 +18,20 @@ let store = createStore(
   applyMiddleware(thunk)
 );
 
-const initializeUsecase = createInteractor(store.dispatch, store.getState);
 
-export const addTodoUsecase = initializeUsecase({
+const initializeServices = createInitializeServices(store.dispatch, store.getState);
+
+const addTodoServices = initializeServices({
   ValidationService: createValidationService,
   TodoService: createTodoService,
-})(AddTodoUsecase);
+});
+
+export const addTodoUsecase = createInteractor(AddTodoUsecase)(addTodoServices);
+
+// export const addTodoUsecase = initializeUsecase({
+//   ValidationService: createValidationService,
+//   TodoService: createTodoService,
+// })(AddTodoUsecase);
 
 
 // store.subscribe(() => {

@@ -47,7 +47,7 @@ const createInitializeServices = (dispatch, getState) => services => {
   return _services;
 };
 
-const createInteractor = usecase => services => (...args) => usecase(_services)(...args);
+const createInteractor = usecase => services => (...args) => usecase(services)(...args);
 
 const DeleteTodoUsecase = ({ TodoService }) => async (todoID) => {
   await TodoService.deleteTodo(todoID);
@@ -81,6 +81,7 @@ const createAddTodoUsecase = ({ ValidationService, TodoService }) => {
 export default {
   AddTodoUsecase,
   createInteractor,
+  createInitializeServices,
   createAddTodoUsecase,
   allTodosUsecase,
 };
