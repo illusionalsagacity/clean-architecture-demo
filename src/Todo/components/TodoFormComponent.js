@@ -13,6 +13,7 @@ export default class TodoFormComponent extends Component {
     this.state = {
       name: "",
       description: "",
+      date: "",
     };
   }
 
@@ -24,13 +25,18 @@ export default class TodoFormComponent extends Component {
     this.setState({ description: e.target.value });
   };
 
+  handleDateChange = (e) => {
+    this.setState({ date: e.target.value });
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
-    const { name, description } = this.state;
-    this.props.addTodo(name, description);
+    const { name, description, date } = this.state;
+    this.props.addTodo(name, description, date);
     this.setState({
       description: "",
       name: "",
+      date: "",
     });
   };
 
@@ -46,6 +52,11 @@ export default class TodoFormComponent extends Component {
       <div className="TodoForm__input-group">
         <label className="TodoForm__label" htmlFor="TodoForm__description">Description</label>
         <input id="TodoForm__description" className="TodoForm__description" type="text" value={this.state.description} onChange={this.handleDescriptionChange} />
+      </div>
+
+      <div className="TodoForm__input-group">
+        <label className="TodoForm__label" htmlFor="TodoForm__description">Date</label>
+        <input id="TodoForm__date" className="TodoForm__description" type="date" value={this.state.date} onChange={this.handleDateChange} />
       </div>
 
       <input type="submit" value="Add Todo" />

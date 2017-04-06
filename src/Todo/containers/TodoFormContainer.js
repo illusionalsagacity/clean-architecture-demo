@@ -7,7 +7,7 @@ import { addTodoUsecase } from "store";
 const makeMapDispatchToProps = () => {
   const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-      addTodo: (name: string, description: string) => addTodoUsecase(ownProps.userID, name, description),
+      addTodo: (name: string, description: string, date: string) => addTodoUsecase(ownProps.userID, name, description, date),
     };
   };
 

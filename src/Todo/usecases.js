@@ -53,11 +53,11 @@ const DeleteTodoUsecase = ({ TodoService }) => async (todoID) => {
   await TodoService.deleteTodo(todoID);
 };
 
-const AddTodoUsecase = ({ ValidationService, TodoService }) => async (creatorID, name, description) => {
+const AddTodoUsecase = ({ ValidationService, TodoService }) => async (creatorID, name, description, date) => {
   let isValid = await ValidationService.validateTodo(description, name, creatorID);
 
   if (isValid) {
-    await TodoService.createTodo(description, name, creatorID);
+    await TodoService.createTodo(description, name, creatorID, date);
   }
 };
 

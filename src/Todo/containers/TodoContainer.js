@@ -29,6 +29,7 @@ const makeMapStateToProps = () => {
           user = userSelector(state, { userID: TodoModel.getCreatorID(todo) });
 
     return {
+      date: TodoModel.getDate(todo),
       description: TodoModel.getDescription(todo),
       name: TodoModel.getName(todo),
       userName: UserModel.getName(user),

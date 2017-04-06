@@ -5,10 +5,10 @@
 export const ADD = "@todo/ADD";
 export const REMOVE = "@todo/REMOVE";
 
-export const add = (id: string, creatorID: string, name: string, description: string) => {
+export const add = (id: string, creatorID: string, name: string, description: string, date: string) => {
   return {
     type: ADD,
-    payload: { id, creatorID, name, description },
+    payload: { id, creatorID, name, description, date },
   };
 };
 

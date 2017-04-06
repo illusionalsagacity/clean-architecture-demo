@@ -34,7 +34,7 @@ let userID = shortid.generate();
 store.dispatch(actions.users.add(userID, "Test User"));
 store.dispatch(actions.todoList.add("all", []));
 
-addTodoUsecase(userID, "name", "Test description");
+addTodoUsecase(userID, "name", "Test description", "1920-10-10");
 
 render((<Provider store={store}>
   <div className="react__root">

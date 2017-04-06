@@ -6,7 +6,7 @@ const mockFetchResponse = (res) => {
 
 // ** MOCK API ** //
 const TodoSDK = {
-  validateTodo: (description, name, creatorID) => {
+  validateTodo: (description, name, creatorID, date) => {
     return new Promise((resolve, reject) => {
       let response = {
         valid: !!(description && name && creatorID),
@@ -14,13 +14,14 @@ const TodoSDK = {
       resolve(mockFetchResponse(response));
     });
   },
-  createTodo: async (description, name, creatorID) => {
+  createTodo: async (description, name, creatorID, date) => {
     return new Promise((resolve, reject) => {
       let response = {
         id: shortid.generate(),
         description,
         name,
         creatorID,
+        date,
       };
 
       resolve(mockFetchResponse(response));
