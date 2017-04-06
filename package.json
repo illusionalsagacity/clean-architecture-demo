@@ -26,6 +26,7 @@
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-1": "^6.22.0",
     "eslint": "^3.15.0",
+    "eslint-plugin-ava": "^4.2.0",
     "eslint-plugin-class-property": "^1.0.3",
     "eslint-plugin-flow": "^2.29.1",
     "eslint-plugin-react": "^6.9.0",

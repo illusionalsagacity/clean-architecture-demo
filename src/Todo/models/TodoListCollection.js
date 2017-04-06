@@ -1,8 +1,9 @@
-"use strict";
+//@flow
 
 import { List, Record } from "immutable";
 import { getID } from "./TodoListModel";
 import * as ReverseLookup from "ReverseLookup";
+import type { TodoCollection } from "./TodoCollection";
 
 
 const _shape = {
@@ -14,7 +15,7 @@ export class TodoListCollection extends Record(_shape) {}
 
 export const empty = new TodoListCollection();
 
-export const add = (todoListCollection, todoList) => {
+export const add = (todoListCollection: TodoListCollection, todoList: TodoCollection) => {
   return todoListCollection.withMutations(state => {
     let i = state.todoLists.size;
     return state
@@ -23,7 +24,7 @@ export const add = (todoListCollection, todoList) => {
   });
 };
 
-export const remove = (todoListCollection, id) => {
+export const remove = (todoListCollection: TodoListCollection, id: string): TodoListCollection => {
   let set = ReverseLookup.get(todoListCollection.indexTable, id);
 
   if (set) {
@@ -38,7 +39,7 @@ export const remove = (todoListCollection, id) => {
   return todoListCollection;
 };
 
-export const update = (todoListCollection, id, todoList) => {
+export const update = (todoListCollection: TodoListCollection, id: string, todoList: TodoCollection): TodoListCollection => {
   let set = ReverseLookup.get(todoListCollection.indexTable, id);
 
   if (set) {
@@ -48,7 +49,7 @@ export const update = (todoListCollection, id, todoList) => {
   return todoListCollection;
 };
 
-export const get = (todoListCollection, id) => {
+export const get = (todoListCollection: TodoListCollection, id: string): TodoCollection => {
   let set = ReverseLookup.get(todoListCollection.indexTable, id);
 
   if (set) {

@@ -3,8 +3,9 @@ import { applyMiddleware, createStore, combineReducers } from "redux";
 import thunk from "redux-thunk";
 import Perf from "react-addons-perf";
 import shortid from "shortid";
-const { reducers, actions, models, usecases } = Todo;
-const { addTodoUsecase } = usecases;
+const { reducers, actions, models, services, usecases } = Todo;
+const { createValidationService, createTodoService } = services;
+const { AddTodoUsecase, createInteractor } = usecases;
 
 //use const for PROD
 let store = createStore(
@@ -16,6 +17,14 @@ let store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
   applyMiddleware(thunk)
 );
+
+const initializeUsecase = createInteractor(store.dispatch, store.getState);
+
+export const addTodoUsecase = initializeUsecase({
+  ValidationService: createValidationService,
+  TodoService: createTodoService,
+})(AddTodoUsecase);
+
 
 // store.subscribe(() => {
 //   console.log(store.getState());

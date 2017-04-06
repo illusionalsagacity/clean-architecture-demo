@@ -11,8 +11,23 @@
   "plugins": [
     "class-property",
     "react",
+    "ava",
+    "flow"
   ],
   "rules": {
+    "ava/assertion-arguments": "error",
+    "ava/no-async-fn-without-await": "error",
+    "ava/no-duplicate-modifiers": "error",
+    "ava/no-identical-title": "error",
+    "ava/no-statement-after-end": "error",
+    "ava/no-todo-implementation": "error",
+    "ava/no-unknown-modifiers": "error",
+    "ava/prefer-async-await": "error",
+    "ava/test-ended": "error",
+    "ava/test-title": "error",
+    "ava/use-t": "error",
+    "ava/use-test": "error",
+    "ava/use-true-false": "error",
     "comma-dangle": [ "error", "always-multiline" ],
     "curly": [ "error", "multi-line" ],
     "dot-notation": [ "error", { "allowKeywords": true } ],

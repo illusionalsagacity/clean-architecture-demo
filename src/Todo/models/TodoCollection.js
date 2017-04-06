@@ -1,8 +1,9 @@
-"use strict";
+//@flow
 
 import { Record, List } from "immutable";
 import { getID } from "./TodoModel";
 import * as ReverseLookup from "ReverseLookup";
+import type { TodoModel } from "./TodoModel";
 
 
 const _shape = {
@@ -13,10 +14,11 @@ const _shape = {
 
 export class TodoCollection extends Record(_shape) {}
 
-export const empty = new TodoCollection();
-export const all = (collection: TodoCollection): List => collection.todos;
+export const empty = () => new TodoCollection();
 
-export const add = (collection: TodoCollection, todoModel) => {
+export const all = (collection: TodoCollection): List<TodoModel> => collection.todos;
+
+export const add = (collection: TodoCollection, todoModel: TodoModel) => {
   return collection.withMutations(state => {
     let i = state.todos.size;
     return state
@@ -26,7 +28,7 @@ export const add = (collection: TodoCollection, todoModel) => {
   });
 };
 
-export const remove = (todoCollection, id) => {
+export const remove = (todoCollection: TodoCollection, id: string): TodoCollection => {
   return todoCollection.withMutations(state => {
     let i = ReverseLookup.get(todoCollection.idTable, id).first();
     let creatorID = todoCollection.todos.get(i).creatorID;
@@ -37,14 +39,14 @@ export const remove = (todoCollection, id) => {
   });
 };
 
-export const get = (todoCollection, id) => {
+export const get = (todoCollection: TodoCollection, id: string): TodoModel => {
   let i = ReverseLookup.get(todoCollection.idTable, id).first();
   return todoCollection.todos.get(i);
 };
 
-const getIndicesByCreatorID = (todoCollection, ownerID) => ReverseLookup.get(todoCollection.creatorTable, ownerID).toArray();
+const getIndicesByCreatorID = (todoCollection: TodoCollection, ownerID: string): string[] => ReverseLookup.get(todoCollection.creatorTable, ownerID).toArray();
 
-export const getIDsByCreatorID = (todoCollection, ownerID) => {
+export const getIDsByCreatorID = (todoCollection: TodoCollection, ownerID: string): string[] => {
   let indices = getIndicesByCreatorID(todoCollection, ownerID);
   return indices.map(i => todoCollection.todos.get(i).id);
 };

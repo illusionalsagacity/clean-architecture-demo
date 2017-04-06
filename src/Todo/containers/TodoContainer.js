@@ -4,7 +4,7 @@ import { createSelector } from "reselect";
 import { connect } from "react-redux";
 import TodoComponent from "../components/TodoComponent";
 import models from "../models";
-const { TodoModel, TodoCollection, UserCollection } = models;
+const { TodoModel, TodoCollection, UserCollection, UserModel } = models;
 import { todosSelector, propTodoIDSelector, todoListsSelector, todoListIDSelector, usersSelector, userIDSelector } from "../selectors";
 
 const makeTodoSelector = () => createSelector(
@@ -29,16 +29,14 @@ const makeMapStateToProps = () => {
           user = userSelector(state, { userID: TodoModel.getCreatorID(todo) });
 
     return {
-      description: todo.description,
-      name: todo.name,
-      userName: user.name,
+      description: TodoModel.getDescription(todo),
+      name: TodoModel.getName(todo),
+      userName: UserModel.getName(user),
     };
   };
 
   return mapStateToProps;
 };
-
-// const anon = (props) => <div style={{ background: "red" }}><TodoComponent {...props} /></div>;
 
 
 const TodoContainer = connect(makeMapStateToProps())(TodoComponent);

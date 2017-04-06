@@ -25,6 +25,41 @@ const allTodosUsecase = (state) => {
 
 // interactors are given a services object and a fn (usecase thunk) to execute
 
+const UsecaseMiddleware = (...usecaseInteractors) => store => next => action => {
+  if (action.type.contains("@usecase")) {
+    usecaseInteractors.forEach(interactor => {
+      if (interactor[action.type]) {
+        interactor[action.type](action, store.dispatch, store.getState);
+      }
+    });
+  } else {
+    next(action);
+  }
+};
+
+type Usecase = (services: Object) => any;
+
+const createInitializeServices = (dispatch, getState) => services => {
+  let _services = {};
+  for (let p in services) {
+    _services[p] = services[p](dispatch, getState);
+  }
+  return _services;
+};
+
+const createInteractor = usecase => services => (...args) => usecase(_services)(...args);
+
+const DeleteTodoUsecase = ({ TodoService }) => async (todoID) => {
+  await TodoService.deleteTodo(todoID);
+};
+
+const AddTodoUsecase = ({ ValidationService, TodoService }) => async (creatorID, name, description) => {
+  let isValid = await ValidationService.validateTodo(description, name, creatorID);
+
+  if (isValid) {
+    await TodoService.createTodo(description, name, creatorID);
+  }
+};
 
 // a use-case interactor
 // the services need to have a type interface
@@ -44,6 +79,8 @@ const createAddTodoUsecase = ({ ValidationService, TodoService }) => {
 };
 
 export default {
+  AddTodoUsecase,
+  createInteractor,
   createAddTodoUsecase,
   allTodosUsecase,
 };

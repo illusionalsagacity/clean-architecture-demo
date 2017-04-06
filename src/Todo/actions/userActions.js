@@ -5,27 +5,26 @@
 export const ADD: string = "@user/ADD";
 export const REMOVE: string = "@user/REMOVE";
 
-type t_addAction = {
+type t_Action<P> = {
   type: string,
-  payload: {
-    id: string,
-    name: string,
-  },
+  payload: P,
 };
 
-type t_removeAction = {
-  type: string,
-  payload: {
-    id: string,
-  },
+type t_AddPayload = {
+  id: string,
+  name: string,
 };
 
-export const add = (id: string, name: string): t_addAction => ({
+type t_RemovePayload = {
+  id: string,
+};
+
+export const add = (id: string, name: string): t_Action<t_AddPayload> => ({
   type: ADD,
   payload: { id, name },
 });
 
-export const remove = (id: string): t_removeAction => ({
+export const remove = (id: string): t_Action<t_RemovePayload> => ({
   type: REMOVE,
   payload: { id },
 });

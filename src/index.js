@@ -4,7 +4,7 @@ import React from "react";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
 import { TodoListContainer, TodoFormContainer } from "Todo/containers";
-import store from "./store";
+import store, { addTodoUsecase } from "./store";
 import Perf from "react-addons-perf";
 import shortid from "shortid";
 
@@ -33,6 +33,8 @@ let userID = shortid.generate();
 
 store.dispatch(actions.users.add(userID, "Test User"));
 store.dispatch(actions.todoList.add("all", []));
+
+addTodoUsecase(userID, "name", "Test description");
 
 render((<Provider store={store}>
   <div className="react__root">

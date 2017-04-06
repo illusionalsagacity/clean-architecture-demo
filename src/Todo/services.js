@@ -1,39 +1,14 @@
 import shortid from "shortid";
 import actions from "Todo/actions";
+import TodoSDK from "./sdk";
 
 
-const mockFetchResponse = (res) => {
-  return { json: () => res };
-};
-
-// ** MOCK API ** //
-const api = {
-  validateTodo: (description, name, creatorID) => {
-    return new Promise((resolve, reject) => {
-      let response = {
-        valid: !!(description && name && creatorID),
-      };
-      resolve(mockFetchResponse(response));
-    });
-  },
-  createTodo: async (description, name, creatorID) => {
-    return new Promise((resolve, reject) => {
-      let response = {
-        id: shortid.generate(),
-        description,
-        name,
-        creatorID,
-      };
-
-      resolve(mockFetchResponse(response));
-    });
-  },
-};
+const initializeService = (dispatch, getState) => createService => createService(dispatch, getState);
 
 export function createValidationService(dispatch, getState) {
 
   var validateTodo = async (description, name, creatorID) => {
-    const validation = await api.validateTodo(description, name, creatorID)
+    const validation = await TodoSDK.validateTodo(description, name, creatorID)
       .catch(console.error)
       .then(data => data.json());
 
@@ -54,7 +29,7 @@ export function createTodoService(dispatch, getState) {
 
   var createTodo = async (description, name, creatorID) => {
 
-    return await api.createTodo(description, name, creatorID)
+    return await TodoSDK.createTodo(description, name, creatorID)
       .catch(console.error)
       .then(data => data.json())
       .then(payload => {
