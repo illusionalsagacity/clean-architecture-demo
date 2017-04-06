@@ -1,3 +1,5 @@
+import shortid from "shortid";
+
 const mockFetchResponse = (res) => {
   return { json: () => res };
 };
