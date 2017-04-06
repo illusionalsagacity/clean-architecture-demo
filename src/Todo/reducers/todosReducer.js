@@ -5,7 +5,7 @@ import { create } from "../models/TodoModel";
 import { add, remove, empty } from "../models/TodoCollection";
 
 
-const initialState = empty;
+const initialState = empty();
 
 const todo = (state, action) => {
   switch (action.type) {
