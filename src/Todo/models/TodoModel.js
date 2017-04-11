@@ -3,16 +3,9 @@
 "use strict";
 
 import { Record } from "immutable";
+import type { AddPayload } from "../actions/todoActions";
 
 type T_ID = number | string;
-
-type T_payload = {
-  description: string,
-  id: T_ID,
-  name: string,
-  creatorID: T_ID,
-  date: string,
-};
 
 export class TodoModel extends Record({
   description: "",
@@ -23,7 +16,7 @@ export class TodoModel extends Record({
 }) {}
 
 //TODO: flow type payload
-export const create = (payload: T_payload): TodoModel => new TodoModel(payload);
+export const create = (payload: AddPayload): TodoModel => new TodoModel(payload);
 
 export const getID = (todoModel: TodoModel): T_ID => todoModel.id;
 

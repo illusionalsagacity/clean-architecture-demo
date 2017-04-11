@@ -9,7 +9,6 @@ import Perf from "react-addons-perf";
 import shortid from "shortid";
 
 import "font-awesome/scss/font-awesome.scss";
-// import "./style.css";
 
 import Todo from "Todo";
 const { actions } = Todo;

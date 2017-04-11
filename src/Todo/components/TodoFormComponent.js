@@ -55,8 +55,8 @@ export default class TodoFormComponent extends Component {
       </div>
 
       <div className="TodoForm__input-group">
-        <label className="TodoForm__label" htmlFor="TodoForm__description">Date</label>
-        <input id="TodoForm__date" className="TodoForm__description" type="date" value={this.state.date} onChange={this.handleDateChange} />
+        <label className="TodoForm__label" htmlFor="TodoForm__date">Date</label>
+        <input id="TodoForm__date" className="TodoForm__date" type="date" value={this.state.date} onChange={this.handleDateChange} />
       </div>
 
       <input type="submit" value="Add Todo" />

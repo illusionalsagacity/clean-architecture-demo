@@ -1,13 +1,18 @@
+//@flow
+
 "use strict";
 
 import { ADD, REMOVE } from "../actions/todoActions";
+import type { AddPayload, RemovePayload } from "../actions/todoActions";
 import { create } from "../models/TodoModel";
+import type { TodoModel } from "../models/TodoModel";
 import { add, remove, empty } from "../models/TodoCollection";
+import type { TodoCollection } from "../models/TodoCollection";
 
 
 const initialState = empty();
 
-const todo = (state, action) => {
+const todo = (state: ?TodoModel, action: ReduxAction<AddPayload>) => {
   switch (action.type) {
     case ADD:
       return create(action.payload);
@@ -16,7 +21,7 @@ const todo = (state, action) => {
   }
 };
 
-const todos = (state=initialState, action) => {
+const todos = (state: TodoCollection = initialState, action: ReduxAction<AddPayload | RemovePayload>) => {
   switch (action.type) {
     case ADD:
       return add(state, todo(undefined, action));
