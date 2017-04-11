@@ -20,12 +20,13 @@ test(t => {
   const name = "test name";
   const creatorID = 0;
   const description = "test description";
+  const date = "2017-11-10";
   const expected = {
     type: ADD,
-    payload: { id, creatorID, name, description },
+    payload: { id, creatorID, name, description, date },
   };
 
-  t.deepEqual(add(id, creatorID, name, description), expected);
+  t.deepEqual(add(id, creatorID, name, description, date), expected);
 });
 
 test(t => {

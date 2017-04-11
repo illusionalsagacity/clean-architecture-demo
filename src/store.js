@@ -3,6 +3,7 @@ import { applyMiddleware, createStore, combineReducers } from "redux";
 import thunk from "redux-thunk";
 import Perf from "react-addons-perf";
 import shortid from "shortid";
+console.log(Todo);
 const { reducers, actions, models, services, usecases } = Todo;
 const { createValidationService, createTodoService, createErrorService } = services;
 const { AddTodoUsecase, createInitializeServices, createInteractor } = usecases;
