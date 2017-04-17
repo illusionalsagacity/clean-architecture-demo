@@ -55,6 +55,7 @@
     "redux-thunk": "^2.2.0",
     "reselect": "^2.5.4",
     "shortid": "^2.2.6",
+    "sinon": "^2.1.0",
     "style-loader": "^0.13.1",
     "uuid": "^3.0.1"
   },
