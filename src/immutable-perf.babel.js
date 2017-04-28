@@ -25,12 +25,12 @@ for (let i = 0; i < 10000; i++) {
 }
 console.timeEnd("set");
 
-console.time("random find");
+console.time("5000 random finds");
 for (let i = 0; i < 5000; i++) {
   let id = Math.floor(Math.random() * 10000);
   map.find(item => item.id === id);
 }
-console.timeEnd("random find");
+console.timeEnd("5000 random finds");
 
 console.time("remove");
 for (let i = 10000; i > 0; i--) {
@@ -50,12 +50,12 @@ for (let i = 0; i < 10000; i++) {
 }
 console.timeEnd("push");
 
-console.time("random find");
+console.time("5000 random finds");
 for (let i = 0; i < 5000; i++) {
   let id = Math.floor(Math.random() * 10000);
   list.find(item => item.id === id);
 }
-console.timeEnd("random find");
+console.timeEnd("5000 random finds");
 
 console.time("remove");
 for (let i = 10000; i > 0; i--) {

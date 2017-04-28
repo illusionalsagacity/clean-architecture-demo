@@ -1,11 +1,11 @@
 import actions from "./actions";
+import reducers from "./reducers";
 import containers from "./containers";
 import models from "./models";
-import reducers from "./reducers";
 import * as services from "./services";
 import usecases from "./usecases";
 
-const Todo = {
+export {
   actions,
   containers,
   models,
@@ -13,5 +13,3 @@ const Todo = {
   services,
   usecases,
 };
-
-export default Todo;

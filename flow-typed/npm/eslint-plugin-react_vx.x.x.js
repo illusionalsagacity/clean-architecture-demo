@@ -1,4 +1,4 @@
-// flow-typed signature: 33b93b1ec5865a83a4bcbd52891e8df5
+// flow-typed signature: 1bd2a34856e67cb5e4103cbf3f729e8b
 // flow-typed version: <<STUB>>/eslint-plugin-react_v^6.9.0/flow_v0.40.0
 
 /**
@@ -27,6 +27,14 @@ declare module 'eslint-plugin-react/lib/rules/display-name' {
 }
 
 declare module 'eslint-plugin-react/lib/rules/forbid-component-props' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-react/lib/rules/forbid-elements' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-react/lib/rules/forbid-foreign-prop-types' {
   declare module.exports: any;
 }
 
@@ -250,6 +258,10 @@ declare module 'eslint-plugin-react/lib/rules/style-prop-object' {
   declare module.exports: any;
 }
 
+declare module 'eslint-plugin-react/lib/rules/void-dom-elements-no-children' {
+  declare module.exports: any;
+}
+
 declare module 'eslint-plugin-react/lib/rules/wrap-multilines' {
   declare module.exports: any;
 }
@@ -290,6 +302,12 @@ declare module 'eslint-plugin-react/lib/rules/display-name.js' {
 }
 declare module 'eslint-plugin-react/lib/rules/forbid-component-props.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/forbid-component-props'>;
+}
+declare module 'eslint-plugin-react/lib/rules/forbid-elements.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/rules/forbid-elements'>;
+}
+declare module 'eslint-plugin-react/lib/rules/forbid-foreign-prop-types.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/rules/forbid-foreign-prop-types'>;
 }
 declare module 'eslint-plugin-react/lib/rules/forbid-prop-types.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/forbid-prop-types'>;
@@ -455,6 +473,9 @@ declare module 'eslint-plugin-react/lib/rules/sort-prop-types.js' {
 }
 declare module 'eslint-plugin-react/lib/rules/style-prop-object.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/style-prop-object'>;
+}
+declare module 'eslint-plugin-react/lib/rules/void-dom-elements-no-children.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/rules/void-dom-elements-no-children'>;
 }
 declare module 'eslint-plugin-react/lib/rules/wrap-multilines.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/rules/wrap-multilines'>;

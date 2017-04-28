@@ -1,3 +1,5 @@
+process.env.BABEL_ENV = 'test';
+
 module.exports = wallaby => {
   return {
     files: [

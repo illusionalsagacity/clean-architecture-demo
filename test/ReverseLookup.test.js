@@ -5,13 +5,13 @@ import { Map, Set } from "immutable";
 import { empty, add, get, remove } from "ReverseLookup";
 
 
-test(t => {
+test("empty", t => {
   t.truthy(empty, "empty is defined");
   t.truthy(Map.isMap(empty), "empty is an Immutable.js Map");
   t.is(empty.size, 0, "empty has a size of 0");
 });
 
-test(t => {
+test("get", t => {
   t.truthy(get, "get is defined");
   let table = empty;
   const key = 1;
@@ -22,7 +22,7 @@ test(t => {
   t.truthy( Set.isSet( get(table, 1) ), "get returns a Set at the given key" );
 });
 
-test(t => {
+test("add", t => {
   t.truthy(add, "add is defined");
   let table = empty;
   const key = 1;
@@ -44,7 +44,7 @@ test(t => {
   t.is(table.get(2).size, 1, "add increases the size of the Set at the key given");
 });
 
-test(t => {
+test("remove", t => {
   t.truthy(remove, "remove is defined");
   let table = empty;
   const key = 1;

@@ -3,12 +3,42 @@ import actions from "Todo/actions";
 import TodoSDK from "./sdk";
 
 
+export const createInitializeServices = (dispatch, getState) => services => {
+  let _services = {};
+  for (let p in services) {
+    _services[p] = services[p](dispatch, getState);
+  }
+  return _services;
+};
+
 export const createErrorService = (dispatch, getState) => ({
   reportError: (err: Error) => {
     console.error(err.message);
   },
 });
 
+
+class Service {
+  constructor(dispatch, getState) {
+    this.dispatch = dispatch;
+    this.getState = getState;
+  }
+}
+
+class ErrorService extends Service {
+  async reportError(err: Error) {
+    console.error(err.message);
+  }
+}
+
+/**
+ * The idea here is that each service will be exported as a singleton.
+ */
+class ValidationService extends Service {
+  async validateTodo(description: string, name: string, creatorID: string, date: string) {
+    await TodoSDK.validateTodo(describe, name, creatorID, date);
+  }
+}
 
 export const createValidationService = (dispatch, getState) => {
 

@@ -12,7 +12,13 @@
     "class-property",
     "react",
     "ava",
-    "flow"
+    "flowtype",
+    "flow-vars"
+  ],
+  "extends": [
+    "airbnb",
+    "airbnb-flow",
+    "plugin:ava/recommended"
   ],
   "rules": {
     "ava/assertion-arguments": "error",
@@ -24,7 +30,7 @@
     "ava/no-unknown-modifiers": "error",
     "ava/prefer-async-await": "error",
     "ava/test-ended": "error",
-    "ava/test-title": "error",
+    "ava/test-title": ["error", "if-multiple"],
     "ava/use-t": "error",
     "ava/use-test": "error",
     "ava/use-true-false": "error",
@@ -32,6 +38,8 @@
     "curly": [ "error", "multi-line" ],
     "dot-notation": [ "error", { "allowKeywords": true } ],
     "eqeqeq": [ "error", "smart" ],
+    "flow-vars/define-flow-type": 1,
+    "flow-vars/use-flow-type": 1,
     "no-alert": "error",
     "no-cond-assign": [ "error", "always" ],
     "no-constant-condition": "error",
@@ -43,17 +51,17 @@
     "no-floating-decimal": "error",
     "no-lonely-if": "error",
     "no-magic-numbers": [ "error", { "ignoreArrayIndexes": true } ],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1, "maxBOF": 1 }],
     "no-path-concat": "error",
     "no-spaced-func": "error",
-    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1, "maxBOF": 1 }],
     "no-trailing-spaces": "error",
     "no-unexpected-multiline": "error",
     "no-unneeded-ternary": "error",
     "no-whitespace-before-property": "error",
+    "quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
     "semi": [ "error", "always", { "omitLastInOneLineBlock": true } ],
     "valid-typeof": "error",
-    "vars-on-top": "error",
-    "quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }]
+    "vars-on-top": "error"
   },
   "env": {
     "browser": true,

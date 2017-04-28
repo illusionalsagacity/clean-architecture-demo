@@ -1,7 +1,6 @@
 import test from "ava";
 import sinon from "sinon";
-import usecases from "Todo/usecases";
-const { AddTodoUsecase } = usecases;
+import { AddTodoUsecase } from "Todo/usecases";
 
 
 test("AddTodoUsecase", t => {

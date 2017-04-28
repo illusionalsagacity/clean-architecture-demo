@@ -29,15 +29,19 @@ export default class TodoFormComponent extends Component {
     this.setState({ date: e.target.value });
   }
 
+  resetState = () => {
+    this.setState({
+      date: "",
+      description: "",
+      name: "",
+    });
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
     const { name, description, date } = this.state;
     this.props.addTodo(name, description, date);
-    this.setState({
-      description: "",
-      name: "",
-      date: "",
-    });
+    this.resetState();
   };
 
   render() {

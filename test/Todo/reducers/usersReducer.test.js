@@ -1,8 +1,10 @@
 /* eslint no-magic-numbers: "off" */
 
 import test from "ava";
-import Todo from "Todo";
-const { actions, reducers, models } = Todo;
+import actions from "Todo/actions";
+import reducers from "Todo/reducers";
+import models from "Todo/models";
+
 const { users } = reducers;
 const { empty, add, remove, size } = models.UserCollection;
 const { create } = models.UserModel;

@@ -1,4 +1,4 @@
-// flow-typed signature: 6663c297828f12272ba696a4c1c12cce
+// flow-typed signature: af900abfc0b9f50f3a26e236862e4cb3
 // flow-typed version: <<STUB>>/babel-preset-env_v^1.1.8/flow_v0.40.0
 
 /**
@@ -26,15 +26,23 @@ declare module 'babel-preset-env/data/built-in-features' {
   declare module.exports: any;
 }
 
-declare module 'babel-preset-env/data/electron-to-chromium' {
-  declare module.exports: any;
-}
-
 declare module 'babel-preset-env/data/plugin-features' {
   declare module.exports: any;
 }
 
+declare module 'babel-preset-env/lib/default-includes' {
+  declare module.exports: any;
+}
+
 declare module 'babel-preset-env/lib/index' {
+  declare module.exports: any;
+}
+
+declare module 'babel-preset-env/lib/module-transformations' {
+  declare module.exports: any;
+}
+
+declare module 'babel-preset-env/lib/normalize-options' {
   declare module.exports: any;
 }
 
@@ -46,14 +54,20 @@ declare module 'babel-preset-env/lib/transform-polyfill-require-plugin' {
 declare module 'babel-preset-env/data/built-in-features.js' {
   declare module.exports: $Exports<'babel-preset-env/data/built-in-features'>;
 }
-declare module 'babel-preset-env/data/electron-to-chromium.js' {
-  declare module.exports: $Exports<'babel-preset-env/data/electron-to-chromium'>;
-}
 declare module 'babel-preset-env/data/plugin-features.js' {
   declare module.exports: $Exports<'babel-preset-env/data/plugin-features'>;
 }
+declare module 'babel-preset-env/lib/default-includes.js' {
+  declare module.exports: $Exports<'babel-preset-env/lib/default-includes'>;
+}
 declare module 'babel-preset-env/lib/index.js' {
   declare module.exports: $Exports<'babel-preset-env/lib/index'>;
+}
+declare module 'babel-preset-env/lib/module-transformations.js' {
+  declare module.exports: $Exports<'babel-preset-env/lib/module-transformations'>;
+}
+declare module 'babel-preset-env/lib/normalize-options.js' {
+  declare module.exports: $Exports<'babel-preset-env/lib/normalize-options'>;
 }
 declare module 'babel-preset-env/lib/transform-polyfill-require-plugin.js' {
   declare module.exports: $Exports<'babel-preset-env/lib/transform-polyfill-require-plugin'>;

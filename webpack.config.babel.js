@@ -3,6 +3,7 @@ import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import UglifyJsPlugin from "uglifyjs-webpack-plugin";
 
+
 const PRODUCTION = process.env.NODE_ENV === "production";
 
 let PATHS = {};

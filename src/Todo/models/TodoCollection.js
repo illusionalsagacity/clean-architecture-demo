@@ -50,3 +50,8 @@ export const getIDsByCreatorID = (todoCollection: TodoCollection, ownerID: strin
   let indices = getIndicesByCreatorID(todoCollection, ownerID);
   return indices.map(i => todoCollection.todos.get(i).id);
 };
+
+export const getTodosByCreatorID = (todoCollection: TodoCollection, ownerID: string): TodoModel[] => {
+  let indices = getIndicesByCreatorID(todoCollection, ownerID);
+  return indices.map(i => todoCollection.todos.get(i));
+};

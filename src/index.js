@@ -4,14 +4,14 @@ import React from "react";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
 import { TodoListContainer, TodoFormContainer } from "Todo/containers";
-import store, { addTodoUsecase } from "./store";
+import store from "./store";
+import { addTodoUsecase } from "./usecases";
 import Perf from "react-addons-perf";
 import shortid from "shortid";
 
 import "font-awesome/scss/font-awesome.scss";
 
-import Todo from "Todo";
-const { actions } = Todo;
+import { actions } from "Todo";
 
 const MyWorker = require("worker-loader!./worker.js");
 

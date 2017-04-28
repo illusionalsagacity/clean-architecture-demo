@@ -2,18 +2,14 @@
 
 import { connect } from "react-redux";
 import TodoFormComponent from "../components/TodoFormComponent";
-import { addTodoUsecase } from "store";
+import { addTodoUsecase } from "usecases";
 
-const makeMapDispatchToProps = () => {
-  const mapDispatchToProps = (dispatch, ownProps) => {
-    return {
-      addTodo: (name: string, description: string, date: string) => addTodoUsecase(ownProps.userID, name, description, date),
-    };
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    addTodo: (name: string, description: string, date: string) => addTodoUsecase(ownProps.userID, name, description, date),
   };
-
-  return mapDispatchToProps;
 };
 
-const TodoFormContainer = connect(undefined, makeMapDispatchToProps)(TodoFormComponent);
+const TodoFormContainer = connect(undefined, mapDispatchToProps)(TodoFormComponent);
 
 export default TodoFormContainer;

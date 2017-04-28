@@ -1,4 +1,4 @@
-// flow-typed signature: 0c1011f6957257f7ab99622ab06a420f
+// flow-typed signature: ded6c907a6fc402568555ad3a24a499d
 // flow-typed version: <<STUB>>/eslint-plugin-class-property_v^1.0.3/flow_v0.40.0
 
 /**
@@ -26,6 +26,10 @@ declare module 'eslint-plugin-class-property/lib/rules/class-property-semicolon'
   declare module.exports: any;
 }
 
+declare module 'eslint-plugin-class-property/test/lib/rules/class-property-semicolon' {
+  declare module.exports: any;
+}
+
 // Filename aliases
 declare module 'eslint-plugin-class-property/index' {
   declare module.exports: $Exports<'eslint-plugin-class-property'>;
@@ -35,4 +39,7 @@ declare module 'eslint-plugin-class-property/index.js' {
 }
 declare module 'eslint-plugin-class-property/lib/rules/class-property-semicolon.js' {
   declare module.exports: $Exports<'eslint-plugin-class-property/lib/rules/class-property-semicolon'>;
+}
+declare module 'eslint-plugin-class-property/test/lib/rules/class-property-semicolon.js' {
+  declare module.exports: $Exports<'eslint-plugin-class-property/test/lib/rules/class-property-semicolon'>;
 }

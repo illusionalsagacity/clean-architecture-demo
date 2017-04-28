@@ -1,8 +1,8 @@
 {
-	"folders":
-	[
-		{
-			"path": ".",
+  "folders":
+  [
+    {
+      "path": ".",
       "name": "Clean Architecture Demo",
       "folder_exclude_patterns":
       [
@@ -10,7 +10,7 @@
         "dist"
       ]
     }
-	],
+  ],
   "settings":
   {
     "tab_size": 2
