@@ -10,7 +10,7 @@ const DeleteTodoUsecase = ({ TodoService }) => async (todoID) => {
 
 const AddTodoUsecase = ({ ValidationService, TodoService, ErrorService }) => {
   return async (creatorID, name, description, date) => {
-    let maybeError = await ValidationService.validateTodo(description, name, creatorID);
+    let maybeError = await ValidationService.validateTodo(description, name, creatorID, date);
 
     if (maybeError instanceof Error) {
       ErrorService.reportError(maybeError);

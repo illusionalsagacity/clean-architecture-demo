@@ -4,32 +4,19 @@ import { connect } from "react-redux";
 import TodoListComponent from "../components/TodoListComponent";
 import models from "../models";
 const { TodoListModel, TodoListCollection } = models;
-import { todoListsSelector, todoListIDSelector } from "../selectors";
+import { selectTodoListByID } from "../selectors";
 
+const mapStateToProps = (state, ownProps) => {
+  const todoList = selectTodoListByID(state, ownProps);
+  const todoIDs = TodoListModel.getTodoIDs(todoList);
 
-const makeTodoListSelector = () => createSelector(
-  todoListsSelector,
-  todoListIDSelector,
-  (todoLists, todoListID) => TodoListCollection.get(todoLists, todoListID),
-);
-
-const makeMapStateToProps = () => {
-  const todoListSelector = makeTodoListSelector();
-
-  const mapStateToProps = (state, ownProps) => {
-    const todoList = todoListSelector(state, ownProps);
-    const todoIDs = TodoListModel.getTodoIDs(todoList);
-
-    return {
-      todoIDs,
-    };
+  return {
+    todoIDs,
   };
-
-  return mapStateToProps;
 };
 
 // TodoListContainer takes in an ID for a TodoList
 // todoLists: { id: TodoIDs[] }
-const TodoListContainer = connect(makeMapStateToProps())(TodoListComponent);
+const TodoListContainer = connect(mapStateToProps)(TodoListComponent);
 
 export default TodoListContainer;
