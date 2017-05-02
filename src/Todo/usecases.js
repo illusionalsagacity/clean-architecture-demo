@@ -1,9 +1,3 @@
-import actions from "./actions";
-const { todo, todoList } = actions;
-
-
-const createInteractor = usecase => services => (...args) => usecase(services)(...args);
-
 const DeleteTodoUsecase = ({ TodoService }) => async (todoID) => {
   await TodoService.deleteTodo(todoID);
 };
@@ -23,5 +17,5 @@ const AddTodoUsecase = ({ ValidationService, TodoService, ErrorService }) => {
 
 export {
   AddTodoUsecase,
-  createInteractor,
+  DeleteTodoUsecase,
 };
