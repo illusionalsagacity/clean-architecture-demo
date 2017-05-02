@@ -9,3 +9,10 @@ This project is to illustrate the structure of a React + Redux web application u
 ```
 
 or, if you like npm just install using that method.
+
+
+# Running
+
+```
+    NODE_ENV=test webpack-dev-server
+```
