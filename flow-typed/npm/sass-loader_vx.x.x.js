@@ -1,4 +1,4 @@
-// flow-typed signature: 7c0c3e3678da3de58f5a012cfe6d1288
+// flow-typed signature: 7a8bd535af6ef09a631dbef31ba10f69
 // flow-typed version: <<STUB>>/sass-loader_v^6.0.3/flow_v0.40.0
 
 /**
@@ -8,8 +8,8 @@
  *
  * Fill this stub out by replacing all the `any` types.
  *
- * Once filled out, we encourage you to share your work with the 
- * community by sending a pull request to: 
+ * Once filled out, we encourage you to share your work with the
+ * community by sending a pull request to:
  * https://github.com/flowtype/flow-typed
  */
 

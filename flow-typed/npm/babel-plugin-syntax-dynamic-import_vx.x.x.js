@@ -1,4 +1,4 @@
-// flow-typed signature: ad4e958f7e72c6364b601afc34447d71
+// flow-typed signature: abd0b4a1787467c0df51ce9bec778a2c
 // flow-typed version: <<STUB>>/babel-plugin-syntax-dynamic-import_v^6.18.0/flow_v0.40.0
 
 /**
@@ -8,8 +8,8 @@
  *
  * Fill this stub out by replacing all the `any` types.
  *
- * Once filled out, we encourage you to share your work with the 
- * community by sending a pull request to: 
+ * Once filled out, we encourage you to share your work with the
+ * community by sending a pull request to:
  * https://github.com/flowtype/flow-typed
  */
 

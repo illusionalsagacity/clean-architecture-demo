@@ -1,4 +1,4 @@
-// flow-typed signature: e34fd8be7f388ea023c14c8530b01f70
+// flow-typed signature: 660469a57f27a578fcf1156e8b708816
 // flow-typed version: <<STUB>>/worker-loader_v^0.8.0/flow_v0.40.0
 
 /**
@@ -8,8 +8,8 @@
  *
  * Fill this stub out by replacing all the `any` types.
  *
- * Once filled out, we encourage you to share your work with the 
- * community by sending a pull request to: 
+ * Once filled out, we encourage you to share your work with the
+ * community by sending a pull request to:
  * https://github.com/flowtype/flow-typed
  */
 

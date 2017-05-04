@@ -1,4 +1,4 @@
-// flow-typed signature: f0a9bb2da6c65e020b4875e78050216d
+// flow-typed signature: 611852678f2e926e87b8fd9bfd8cf926
 // flow-typed version: <<STUB>>/babel-plugin-transform-async-to-generator_v^6.22.0/flow_v0.40.0
 
 /**
@@ -8,8 +8,8 @@
  *
  * Fill this stub out by replacing all the `any` types.
  *
- * Once filled out, we encourage you to share your work with the 
- * community by sending a pull request to: 
+ * Once filled out, we encourage you to share your work with the
+ * community by sending a pull request to:
  * https://github.com/flowtype/flow-typed
  */
 

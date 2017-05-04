@@ -1,4 +1,4 @@
-// flow-typed signature: 4432488af9d4435a9bd05054197acd22
+// flow-typed signature: c2a54d642192d9ee5099807801929e57
 // flow-typed version: <<STUB>>/uglify-js_v^2.7.5/flow_v0.40.0
 
 /**
@@ -8,8 +8,8 @@
  *
  * Fill this stub out by replacing all the `any` types.
  *
- * Once filled out, we encourage you to share your work with the 
- * community by sending a pull request to: 
+ * Once filled out, we encourage you to share your work with the
+ * community by sending a pull request to:
  * https://github.com/flowtype/flow-typed
  */
 

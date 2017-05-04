@@ -1,4 +1,4 @@
-// flow-typed signature: dfd8b2deacf40773a97312cf8e836ac9
+// flow-typed signature: 207c7aa80351103c2a1b7d5daba48654
 // flow-typed version: <<STUB>>/react-addons-perf_v^15.4.2/flow_v0.40.0
 
 /**
@@ -8,8 +8,8 @@
  *
  * Fill this stub out by replacing all the `any` types.
  *
- * Once filled out, we encourage you to share your work with the 
- * community by sending a pull request to: 
+ * Once filled out, we encourage you to share your work with the
+ * community by sending a pull request to:
  * https://github.com/flowtype/flow-typed
  */
 

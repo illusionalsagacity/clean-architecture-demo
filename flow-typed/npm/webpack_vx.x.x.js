@@ -1,4 +1,4 @@
-// flow-typed signature: 2bb205def2e11a25ed14459665ebaa86
+// flow-typed signature: d94c377b2f6f2e14baa1abd5866b38cc
 // flow-typed version: <<STUB>>/webpack_vnext/flow_v0.40.0
 
 /**
@@ -8,8 +8,8 @@
  *
  * Fill this stub out by replacing all the `any` types.
  *
- * Once filled out, we encourage you to share your work with the 
- * community by sending a pull request to: 
+ * Once filled out, we encourage you to share your work with the
+ * community by sending a pull request to:
  * https://github.com/flowtype/flow-typed
  */
 
@@ -734,6 +734,10 @@ declare module 'webpack/lib/MultiWatching' {
   declare module.exports: any;
 }
 
+declare module 'webpack/lib/NamedChunksPlugin' {
+  declare module.exports: any;
+}
+
 declare module 'webpack/lib/NamedModulesPlugin' {
   declare module.exports: any;
 }
@@ -982,6 +986,10 @@ declare module 'webpack/lib/UseStrictPlugin' {
   declare module.exports: any;
 }
 
+declare module 'webpack/lib/util/identifier' {
+  declare module.exports: any;
+}
+
 declare module 'webpack/lib/validateSchema' {
   declare module.exports: any;
 }
@@ -1003,6 +1011,10 @@ declare module 'webpack/lib/webpack' {
 }
 
 declare module 'webpack/lib/webpack.web' {
+  declare module.exports: any;
+}
+
+declare module 'webpack/lib/WebpackError' {
   declare module.exports: any;
 }
 
@@ -1581,6 +1593,9 @@ declare module 'webpack/lib/MultiStats.js' {
 declare module 'webpack/lib/MultiWatching.js' {
   declare module.exports: $Exports<'webpack/lib/MultiWatching'>;
 }
+declare module 'webpack/lib/NamedChunksPlugin.js' {
+  declare module.exports: $Exports<'webpack/lib/NamedChunksPlugin'>;
+}
 declare module 'webpack/lib/NamedModulesPlugin.js' {
   declare module.exports: $Exports<'webpack/lib/NamedModulesPlugin'>;
 }
@@ -1767,6 +1782,9 @@ declare module 'webpack/lib/UnsupportedFeatureWarning.js' {
 declare module 'webpack/lib/UseStrictPlugin.js' {
   declare module.exports: $Exports<'webpack/lib/UseStrictPlugin'>;
 }
+declare module 'webpack/lib/util/identifier.js' {
+  declare module.exports: $Exports<'webpack/lib/util/identifier'>;
+}
 declare module 'webpack/lib/validateSchema.js' {
   declare module.exports: $Exports<'webpack/lib/validateSchema'>;
 }
@@ -1784,6 +1802,9 @@ declare module 'webpack/lib/webpack.js' {
 }
 declare module 'webpack/lib/webpack.web.js' {
   declare module.exports: $Exports<'webpack/lib/webpack.web'>;
+}
+declare module 'webpack/lib/WebpackError.js' {
+  declare module.exports: $Exports<'webpack/lib/WebpackError'>;
 }
 declare module 'webpack/lib/WebpackOptionsApply.js' {
   declare module.exports: $Exports<'webpack/lib/WebpackOptionsApply'>;

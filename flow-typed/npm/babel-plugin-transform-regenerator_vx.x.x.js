@@ -1,4 +1,4 @@
-// flow-typed signature: 129693b3cd60d50413d82129201e8b2b
+// flow-typed signature: 73a3d2b02e57e9c4dfc24de3cfb91b03
 // flow-typed version: <<STUB>>/babel-plugin-transform-regenerator_v^6.22.0/flow_v0.40.0
 
 /**
@@ -8,8 +8,8 @@
  *
  * Fill this stub out by replacing all the `any` types.
  *
- * Once filled out, we encourage you to share your work with the 
- * community by sending a pull request to: 
+ * Once filled out, we encourage you to share your work with the
+ * community by sending a pull request to:
  * https://github.com/flowtype/flow-typed
  */
 
