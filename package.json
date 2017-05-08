@@ -41,7 +41,7 @@
     "uglifyjs-webpack-plugin": "^0.2.1",
     "url-loader": "^0.5.8",
     "webpack": "next",
-    "webpack-dev-server": "^2.3.0",
+    "webpack-dev-server": "^2.4.5",
     "worker-loader": "^0.8.0"
   },
   "dependencies": {
