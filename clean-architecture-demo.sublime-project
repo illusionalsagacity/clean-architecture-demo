@@ -1,14 +1,15 @@
 {
+  "config_file": "/home/meyerrd/Documents/source/clean-architecture-demo/wallaby.js",
   "folders":
   [
     {
-      "path": ".",
-      "name": "Clean Architecture Demo",
       "folder_exclude_patterns":
       [
         "node_modules",
         "dist"
-      ]
+      ],
+      "name": "Clean Architecture Demo",
+      "path": "."
     }
   ],
   "settings":

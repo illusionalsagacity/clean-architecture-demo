@@ -1,5 +1,21 @@
+@import "~@blueprintjs/core/dist/blueprint.css";
+@import "~@blueprintjs/datetime/dist/blueprint-datetime.css";
+
+body {
+	background-color: #efefef;
+	margin: 15px;
+}
+
+.TodoList {
+	margin-top: 15px;
+}
+
 .TodoForm__label {
   display: inline-block;
   padding-right: 20px;
   width: 80px;
+}
+
+.TodoForm__date-group .pt-popover-target {
+	width: 100%;
 }

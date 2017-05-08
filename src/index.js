@@ -9,21 +9,22 @@ import { addTodoUsecase } from "./usecases";
 import Perf from "react-addons-perf";
 import shortid from "shortid";
 
+import "./style.css";
 import "font-awesome/scss/font-awesome.scss";
 
 import { actions } from "Todo";
 
-const MyWorker = require("worker-loader!./worker.js");
+// const MyWorker = require("worker-loader!./worker.js");
 
-let myWorker = new MyWorker();
+// let myWorker = new MyWorker();
 
-myWorker.postMessage({
-  foo: "bar",
-});
+// myWorker.postMessage({
+//   foo: "bar",
+// });
 
-myWorker.onmessage = e => {
-  console.log(e);
-};
+// myWorker.onmessage = e => {
+//   console.log(e);
+// };
 
 
 // Perf.start();

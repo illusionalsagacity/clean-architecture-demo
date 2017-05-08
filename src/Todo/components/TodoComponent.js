@@ -12,10 +12,10 @@ export default class TodoComponent extends Component {
 
   render() {
     const { description, name, userName, date } = this.props;
-    return (<div className="todo">
-      <h3 className="todo__header">{name} - {userName} - {date}</h3>
-      <div className="todo__container">
-        <span className="todo__description">{description}</span>
+    return (<div className="Todo pt-card pt-elevation-1">
+      <h5 className="Todo__header">{name} - {userName} - {date}</h5>
+      <div className="Todo__container">
+        <span className="Todo__description">{description}</span>
       </div>
     </div>);
   }

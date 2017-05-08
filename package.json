@@ -6,7 +6,9 @@
   "author": "illusionalsagacity <illusionalsagacity@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "ava"
+    "build": "NODE_ENV=test webpack -p",
+    "watch": "NODE_ENV=test webpack-dev-server",
+    "test": "NODE_SRC=./src NODE_ENV=test ava"
   },
   "devDependencies": {
     "ava": "^0.18.1",
@@ -45,6 +47,8 @@
     "worker-loader": "^0.8.0"
   },
   "dependencies": {
+    "@blueprintjs/core": "^1.16.0",
+    "@blueprintjs/datetime": "^1.14.1",
     "css-loader": "^0.26.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-airbnb-flow": "^1.0.2",
@@ -55,8 +59,10 @@
     "file-loader": "^0.11.1",
     "font-awesome": "^4.7.0",
     "immutable": "4.0.0-rc.2",
+    "moment": "^2.18.1",
     "re-reselect": "^0.4.0",
     "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.5.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
@@ -81,6 +87,20 @@
     "require": [
       "babel-register"
     ],
-    "babel": "inherit"
+    "babel": {
+      "babelrc": true,
+      "presets": [
+        "react",
+        "stage-1",
+        [
+          "env",
+          {
+            "targets": {
+              "node": true
+            }
+          }
+        ]
+      ]
+    }
   }
 }

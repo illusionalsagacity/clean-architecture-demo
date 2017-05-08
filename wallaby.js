@@ -11,10 +11,14 @@ module.exports = wallaby => {
         pattern: "node_modules/immutable/dist/immutable.js",
         instrument: false,
       },
+      {
+        pattern: "src/**/__test__/*.test.js",
+        ignore: true,
+      },
       "src/**/*.js",
     ],
 
-    tests: [ "test/**/*.test.js" ],
+    tests: [ "src/**/__test__/*.test.js" ],
 
     delays: {
       run: 500,
