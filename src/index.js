@@ -2,8 +2,6 @@
 import "babel-polyfill";
 import React from "react";
 import { render } from "react-dom";
-import { Provider } from "react-redux";
-import { TodoListContainer, TodoFormContainer } from "Todo/containers";
 import store from "./store";
 import { addTodoUsecase } from "./usecases";
 import Perf from "react-addons-perf";
@@ -11,6 +9,8 @@ import shortid from "shortid";
 
 import "./style.css";
 import "font-awesome/scss/font-awesome.scss";
+
+import App from "./app";
 
 import { actions } from "Todo";
 
@@ -29,21 +29,12 @@ import { actions } from "Todo";
 
 // Perf.start();
 //
-let userID = shortid.generate();
+store.dispatch(actions.users.add("user-1", "Test User"));
+store.dispatch(actions.todoList.add("all", "All Todos", []));
 
-store.dispatch(actions.users.add(userID, "Test User"));
-store.dispatch(actions.todoList.add("all", []));
+addTodoUsecase("user-1", "name", "Test description", "1920-10-10");
 
-addTodoUsecase(userID, "name", "Test description", "1920-10-10");
-
-render((<Provider store={store}>
-  <div className="react__root">
-    <TodoFormContainer userID={userID} />
-    <div>
-      <TodoListContainer todoListID="all" />
-    </div>
-  </div>
-</Provider>), document.getElementById("react-mount"));
+render(<App />, document.getElementById("react-mount"));
 
 // Perf.stop();
 

@@ -22,7 +22,13 @@ export default class TodoFormComponent extends Component {
   }
 
   handleNameChange = (e) => {
-    this.setState({ name: e.target.value });
+    const name = e.target.value;
+    this.setState((state, props) => {
+      return {
+          ...state,
+        name,
+      }
+    });
   };
 
   handleDescriptionChange = (e) => {
@@ -70,7 +76,7 @@ export default class TodoFormComponent extends Component {
       <div className="pt-form-group TodoForm__date-group">
         <label className="pt-label" htmlFor="TodoForm__date">Date</label>
         <div className="pt-form-content">
-          <DateInput className="pt-fill" inputProps={{ className: "pt-fill" }} value={this.state.date} onChange={this.handleDateChange.bind(this)} format="MMM Do YY" />
+          <DateInput value={this.state.date} onChange={this.handleDateChange.bind(this)} placeholder="Date" />
         </div>
       </div>
 

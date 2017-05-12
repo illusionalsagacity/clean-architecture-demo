@@ -10,20 +10,22 @@ type Action<P> = {
 
 type AddPayload = {
   id: string,
+  name: string,
   todoIDs: string[],
 };
 
 type UpdatePayload = {
   id: string,
+  name: string,
   todoID: string,
 };
 
-export const add = (id: string, todoIDs: string[]): Action<AddPayload> => ({
+export const add = (id: string, name: string, todoIDs: string[]): Action<AddPayload> => ({
   type: ADD,
-  payload: { id, todoIDs },
+  payload: { id, name, todoIDs },
 });
 
-export const update = (id: string, todoID: string): Action<UpdatePayload> => ({
+export const update = (id: string, name: string, todoID: string): Action<UpdatePayload> => ({
   type: UPDATE,
-  payload: { id, todoID },
+  payload: { id, name, todoID },
 });

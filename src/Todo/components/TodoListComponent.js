@@ -10,6 +10,7 @@ export default class TodoListComponent extends Component {
 
   render() {
     return (<div className="TodoList">
+      <h5>Todo List</h5>
       { this.props.todoIDs ? this.props.todoIDs.map(todoID => <TodoContainer key={todoID} todoID={todoID} />) : null }
     </div>);
   }

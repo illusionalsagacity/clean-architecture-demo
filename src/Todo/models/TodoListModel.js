@@ -4,6 +4,7 @@ import { Record, List } from "immutable";
 
 const _shape = {
   id: undefined,
+  name: "",
   todoIDs: List(),
 };
 
@@ -11,9 +12,9 @@ export class TodoListModel extends Record(_shape) {
 }
 
 export const create = (payload) => {
-  const { id } = payload;
+  const { id, name } = payload;
   const todoIDs = List.of(...payload.todoIDs);
-  return new TodoListModel({ id, todoIDs });
+  return new TodoListModel({ id, name, todoIDs });
 };
 
 export const getID = (todoListModel) => todoListModel.id;

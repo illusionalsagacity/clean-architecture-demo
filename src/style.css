@@ -4,6 +4,7 @@
 body {
 	background-color: #efefef;
 	margin: 15px;
+  padding-top: 50px;
 }
 
 .TodoList {
@@ -18,4 +19,8 @@ body {
 
 .TodoForm__date-group .pt-popover-target {
 	width: 100%;
+}
+
+.TodoNavbar__link {
+  color: #106ba3;
 }
