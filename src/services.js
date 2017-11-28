@@ -13,3 +13,8 @@ export const addTodoServices = serviceInitializer({
   TodoService,
   ErrorService,
 });
+
+export const loadTodoServices = serviceInitializer({
+  TodoService,
+  ErrorService,
+})

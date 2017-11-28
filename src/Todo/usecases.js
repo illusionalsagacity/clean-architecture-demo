@@ -1,8 +1,8 @@
-const DeleteTodoUsecase = ({ TodoService }) => async (todoID) => {
+export const DeleteTodoUsecase = ({ TodoService }) => async (todoID) => {
   await TodoService.deleteTodo(todoID);
 };
 
-const AddTodoUsecase = ({ ValidationService, TodoService, ErrorService }) => {
+export const AddTodoUsecase = ({ ValidationService, TodoService, ErrorService }) => {
   return async (creatorID, name, description, date) => {
     let maybeError = await ValidationService.validateTodo(description, name, creatorID, date);
 
@@ -14,8 +14,12 @@ const AddTodoUsecase = ({ ValidationService, TodoService, ErrorService }) => {
   };
 };
 
-
-export {
-  AddTodoUsecase,
-  DeleteTodoUsecase,
+export const LoadTodosUsecase = ({ TodoService, ErrorService }) => {
+  return async () => {
+    try {
+      TodoService.loadTodos()
+    } catch (e) {
+      ErrorService.reportError(e);
+    }
+  };
 };

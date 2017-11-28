@@ -28,6 +28,16 @@ export const add = (collection: TodoCollection, todoModel: TodoModel) => {
   });
 };
 
+export const addAll = (collection: TodoCollection, todos: TodoModel[]) => {
+  return collection.withMutations(state => {
+    todos.forEach(todo => {
+      state = add(state, todo);
+    });
+
+    return state;
+  });
+};
+
 export const remove = (todoCollection: TodoCollection, id: string): TodoCollection => {
   return todoCollection.withMutations(state => {
     let i = ReverseLookup.get(todoCollection.idTable, id).first();

@@ -3,6 +3,7 @@
 "use strict";
 
 export const ADD = "@todo/ADD";
+export const ADD_ALL = "@todo/ADD_ALL";
 export const REMOVE = "@todo/REMOVE";
 
 export type AddPayload = {|
@@ -21,6 +22,15 @@ export const add = (id: string, creatorID: string, name: string, description: st
   return {
     type: ADD,
     payload: { id, creatorID, name, description, date },
+  };
+};
+
+export const addAll = (todos: AddPayload[]): ReduxAction<{ todos: AddPayload[] }> => {
+  return {
+    type: ADD_ALL,
+    payload: {
+      todos,
+    },
   };
 };
 
