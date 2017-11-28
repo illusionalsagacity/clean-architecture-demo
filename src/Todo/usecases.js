@@ -17,7 +17,7 @@ export const AddTodoUsecase = ({ ValidationService, TodoService, ErrorService })
 export const LoadTodosUsecase = ({ TodoService, ErrorService }) => {
   return async () => {
     try {
-      TodoService.loadTodos()
+      await TodoService.loadTodos();
     } catch (e) {
       ErrorService.reportError(e);
     }
